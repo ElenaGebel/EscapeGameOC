@@ -8,11 +8,16 @@ public class User extends AbstactPlayer{
     Scanner scanner;
     @Override
     public ArrayList getCombination() {
-        askUserForCombination();
+        combinationArrayList = new ArrayList<>();
+        String userCombination = Integer.toString(askUserForNumber());
+
+        for(int i=0; i < userCombination.length(); i++){
+            combinationArrayList.add(Character.getNumericValue(userCombination.charAt(i)));
+        }
         return combinationArrayList;
     }
 
-    public void askUserForCombination() {
+    public int askUserForNumber() {
 
         int result = 0;
         do {
@@ -20,16 +25,15 @@ public class User extends AbstactPlayer{
 
             if (scanner.hasNextInt()) {
                 result = scanner.nextInt();
-                if( GameModel.getCombinationNum())
+                if(Integer.toString(result).length() != GameModel.getCombinationNum())
+                    result = 0;
 
-                if (strategyType < 1 || strategyType > 3){
-                    printOutMessageAndLog("Veuillez essayer encore", "Illegal Choice", "info");
-                    strategyType = 0;
-                }
             } else {
                 result = 0;
 
             }
         } while (result == 0);
+
+        return result;
     }
 }

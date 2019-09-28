@@ -20,7 +20,6 @@ public abstract class AbstactPlayer {
                     result +="+";
                 else if (combinationArrayList.get(i).compareTo(arrayListToCompare.get(i)) == -1)
                     result +="-";
-
             }
         }
         return result;
