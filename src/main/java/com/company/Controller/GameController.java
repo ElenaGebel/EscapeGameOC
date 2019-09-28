@@ -1,8 +1,5 @@
 package com.company.Controller;
 
-import com.company.Controller.Strategy.Challenger;
-import com.company.Controller.Strategy.Defenseur;
-import com.company.Controller.Strategy.Duel;
 import com.company.Controller.Strategy.IStrategy;
 import com.company.Controller.Strategy.Player.ArtificialIntelligence;
 import com.company.Controller.Strategy.Player.User;
@@ -26,14 +23,15 @@ public class GameController {
 
     public void initGame()  {
         restoreDefault();
-        System.out.println("Bienvenue dans le jeu");
-        logger.info("InitGame");
+
+        printOutMessageAndLog("Bienvenue dans le jeu",
+                "InitGame", "info");
 
         int strategyType = 0;
 
         do {
-            System.out.println("Pour commencer veillez choisir un mode de jeu:");
-            System.out.println("1 - Challenger, 2 - Defenseur, 3 - Duel");
+            printOutMessageAndLog("Pour commencer veillez choisir un mode de jeu:%n 1 - Challenger, 2 - Defenseur, 3 - Duel",
+                    "Menu of the game proposed", "info");
 
             scanner = new Scanner(System.in);
 
@@ -41,47 +39,74 @@ public class GameController {
                 strategyType = scanner.nextInt();
 
                 if (strategyType < 1 || strategyType > 3){
-                    System.out.println("Veuillez essayer encore(\"1 - Challenger, 2 - Defenseur, 3 - Duel\")");
-                    logger.debug("Illegal Choice");
+                    printOutMessageAndLog("Veuillez essayer encore", "Illegal Choice", "info");
                     strategyType = 0;
                 }
             } else {
                 strategyType = 0;
-                System.out.println("Veuillez essayer encore(\"1 - Challenger, 2 - Defenseur, 3 - Duel\")");
-                logger.debug("Illegal Choice");
+                printOutMessageAndLog("Veuillez essayer encore", "Illegal Choice", "info");
+
             }
         } while (strategyType == 0);
 
         GameModel.setCurrentStrategyType(strategyType);
 
-        if(GameModel.isModeDevelopeur()){
-            logger.info("StrategyType choosed: " + strategyType);
-        }
-
+        printOutMessageAndLog("Vous avez choisi un mod de jeu "+ GameModel.getCurrentStrategyTypeName(),
+                "StrategyType choosed: " + GameModel.getCurrentStrategyTypeName(), "info");
 
         try {
-            Class<?> newClass = Class.forName(String.format(GameModel.getStrategyClassPath() + GameModel.getCurrentStrategyTypeName()]));
+            Class<?> newClass = Class.forName(String.format(GameModel.getStrategyClassPath() + GameModel.getCurrentStrategyTypeName()));
             try {
                 currentStrategyInstance = (IStrategy) newClass.getDeclaredConstructor().newInstance();
             } catch (InstantiationException e) {
-                System.out.println("InstantiationException "+ e.getMessage());
+                printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
+                        "InstantiationException" + e.getMessage(), "error");
             } catch (IllegalAccessException e) {
-                System.out.println("IllegalAccessException "+ e.getMessage());
+                printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
+                        "IllegalAccessException" + e.getMessage(), "error");
+
             } catch (InvocationTargetException e) {
-                System.out.println("InvocationTargetException "+ e.getMessage());
+                printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
+                        "InvocationTargetException" + e.getMessage(), "error");
+
             } catch (NoSuchMethodException e) {
-                System.out.println("NoSuchMethodException "+ e.getMessage());
+                printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
+                        "NoSuchMethodException" + e.getMessage(), "error");
+
             }
 
         }catch(ClassNotFoundException e){
-                    System.out.println("ClassNotFoundException "+ e.getMessage());
+                    printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
+                            "Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(), "error");
         }
-        if (currentStrategyInstance != null){
+        if (currentStrategyInstance != null)
             currentStrategyInstance.play(new User(), new ArtificialIntelligence());
-        }
+        else
+            printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu",
+                    "currentStrategyInstance is null", "error");
+
+     }
+     private void printOutMessageAndLog(String outMessage,String logMessage, String logType){
+        if(outMessage != "")
+            System.out.println(outMessage);
+
+         if((GameModel.isModeDevelopeur() || logType != "debug") && logMessage != ""){
+             switch (logType) {
+                 case "debug":
+                     logger.debug(logMessage);
+                     break;
+                 case "error":
+                     logger.error(logMessage);
+                     break;
+                 default:
+                     logger.info(logMessage);
+             }
+         }
+
      }
 
-    private void restoreDefault() {
+
+     private void restoreDefault() {
         currentStrategyInstance = null;
         GameModel.setCurrentStrategyType(1);
     }

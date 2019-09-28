@@ -1,0 +1,13 @@
+28-09-2019 14:01:13.058 [main] DEBUG com.company.Main - App is ready
+28-09-2019 14:01:13.073 [main] INFO  com.company.Controller.GameController - InitGame
+28-09-2019 14:01:18.348 [main] DEBUG com.company.Controller.GameController - Illegal Choice
+28-09-2019 14:01:40.248 [main] INFO  com.company.Controller.GameController - StrategyType choosed: Challenger
+28-09-2019 15:00:56.170 [main] DEBUG com.company.Main - App is ready
+28-09-2019 15:00:56.178 [main] INFO  com.company.Controller.GameController - InitGame
+28-09-2019 15:00:56.178 [main] INFO  com.company.Controller.GameController - Menu of the game proposed
+28-09-2019 15:00:57.034 [main] DEBUG com.company.Main - App is ready
+28-09-2019 15:00:57.039 [main] INFO  com.company.Controller.GameController - InitGame
+28-09-2019 15:00:57.041 [main] INFO  com.company.Controller.GameController - Menu of the game proposed
+28-09-2019 15:01:50.950 [main] INFO  com.company.Controller.GameController - Illegal Choice
+28-09-2019 15:01:50.950 [main] INFO  com.company.Controller.GameController - Menu of the game proposed
+28-09-2019 15:01:59.727 [main] INFO  com.company.Controller.GameController - StrategyType choosed: Challenger
