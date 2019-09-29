@@ -5,11 +5,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public final class GameView {
-    private GameView instance = new GameView();
-    public static Logger logger;
+    public static Logger logger = LogManager.getLogger();;
 
     private GameView() {
-        logger = LogManager.getLogger();
+
     }
 
     public static void printOutMessageAndLog(String outMessage,String logMessage, String logType){

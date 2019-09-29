@@ -12,3 +12,33 @@
 28-09-2019 15:01:50.950 [main] INFO  com.company.Controller.GameController - Menu of the game proposed
 28-09-2019 15:01:59.727 [main] INFO  com.company.Controller.GameController - StrategyType choosed: Challenger
 28-09-2019 18:27:40.920 [main] DEBUG com.company.Main - App is ready
+29-09-2019 21:06:07.854 [main] DEBUG com.company.Main - App is ready
+29-09-2019 21:06:07.872 [main] INFO  com.company.View.GameView - InitGame
+29-09-2019 21:06:07.873 [main] INFO  com.company.View.GameView - Menu of the game proposed
+29-09-2019 21:06:14.185 [main] INFO  com.company.View.GameView - StrategyType choosed: Challenger
+29-09-2019 21:39:20.065 [main] DEBUG com.company.Main - App is ready
+29-09-2019 21:39:20.082 [main] INFO  com.company.View.GameView - InitGame
+29-09-2019 21:39:20.082 [main] INFO  com.company.View.GameView - Menu of the game proposed
+29-09-2019 21:39:27.452 [main] INFO  com.company.View.GameView - StrategyType choosed: Challenger
+29-09-2019 21:39:27.458 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+29-09-2019 21:39:27.458 [main] INFO  com.company.View.GameView - IA generated number 2 5 7 4
+29-09-2019 21:43:26.234 [main] DEBUG com.company.Main - App is ready
+29-09-2019 21:43:26.244 [main] INFO  com.company.View.GameView - InitGame
+29-09-2019 21:43:26.244 [main] INFO  com.company.View.GameView - Menu of the game proposed
+29-09-2019 21:43:31.666 [main] INFO  com.company.View.GameView - StrategyType choosed: Challenger
+29-09-2019 21:43:31.668 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+29-09-2019 21:43:31.669 [main] INFO  com.company.View.GameView - IA generated number 6940
+29-09-2019 22:36:47.801 [main] DEBUG com.company.Main - App is ready
+29-09-2019 22:36:47.811 [main] INFO  com.company.View.GameView - InitGame
+29-09-2019 22:36:47.811 [main] INFO  com.company.View.GameView - Menu of the game proposed
+29-09-2019 22:36:56.568 [main] INFO  com.company.View.GameView - StrategyType choosed: Challenger
+29-09-2019 22:36:56.571 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+29-09-2019 22:36:56.572 [main] INFO  com.company.View.GameView - IA generated number 8738
+29-09-2019 22:37:18.986 [main] INFO  com.company.View.GameView - Attempt failed 
+29-09-2019 22:37:40.119 [main] INFO  com.company.View.GameView - Attempt failed 
+29-09-2019 22:37:45.787 [main] INFO  com.company.View.GameView - Attempt failed 
+29-09-2019 22:37:50.444 [main] INFO  com.company.View.GameView - Attempt failed 
+29-09-2019 22:37:50.445 [main] INFO  com.company.View.GameView - Game Over
+29-09-2019 23:02:09.484 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+29-09-2019 23:02:09.499 [main] INFO  com.company.View.GameView - InitGame
+29-09-2019 23:02:09.499 [main] INFO  com.company.View.GameView - Menu of the game proposed

@@ -22,13 +22,12 @@ public class GameController {
     public void initGame()  {
         restoreDefault();
 
-        GameView.printOutMessageAndLog("Bienvenue dans le jeu",
-                "InitGame", "info");
+        GameView.printOutMessageAndLog("", "InitGame", "info");
 
         int strategyType = 0;
 
         do {
-            GameView.printOutMessageAndLog("Pour commencer veillez choisir un mode de jeu:%n 1 - Challenger, 2 - Defenseur, 3 - Duel",
+            GameView.printOutMessageAndLog("Pour commencer veillez choisir un mode de jeu: 1 - Challenger, 2 - Defenseur, 3 - Duel",
                     "Menu of the game proposed", "info");
 
             scanner = new Scanner(System.in);
@@ -37,20 +36,18 @@ public class GameController {
                 strategyType = scanner.nextInt();
 
                 if (strategyType < 1 || strategyType > 3){
-                    GameView.printOutMessageAndLog("Veuillez essayer encore", "Illegal Choice", "info");
+                    GameView.printOutMessageAndLog("Veuillez choisir le numero entre 1 et 3", "Illegal Choice", "info");
                     strategyType = 0;
                 }
             } else {
                 strategyType = 0;
-                GameView.printOutMessageAndLog("Veuillez essayer encore", "Illegal Choice", "info");
+                GameView.printOutMessageAndLog("Veuillez choisir le numero entre 1 et 3", "Illegal Choice", "info");
 
             }
         } while (strategyType == 0);
 
-        GameModel.setCurrentStrategyType(strategyType);
-
         GameView.printOutMessageAndLog("Vous avez choisi un mod de jeu "+ GameModel.getCurrentStrategyTypeName(),
-                "StrategyType choosed: " + GameModel.getCurrentStrategyTypeName(), "info");
+                "StrategyType: " + GameModel.getCurrentStrategyTypeName(), "info");
 
         try {
             Class<?> newClass = Class.forName(String.format(GameModel.getStrategyClassPath() + GameModel.getCurrentStrategyTypeName()));

@@ -25,4 +25,12 @@ public abstract class AbstactPlayer {
         return result;
     }
 
+    public String getCombinationToString(){
+        return combinationArrayList.toString().replaceAll("\\[|\\]|[,][ ]","");
+    }
+
+    public int getCombinationToInteger(){
+        return Integer.valueOf(combinationArrayList.toString().replaceAll("\\[|\\]|[,][ ]",""));
+    }
+
 }
