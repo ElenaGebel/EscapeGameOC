@@ -9,7 +9,6 @@ public class ArtificialIntelligence extends AbstactPlayer{
     public ArrayList getCombination() {
         if(this.combinationArrayList.size() == 0)
             generateCombination();
-            System.out.println(this.combinationArrayList.size() );
         return combinationArrayList;
     }
 

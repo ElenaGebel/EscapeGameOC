@@ -28,10 +28,10 @@ public class User extends AbstactPlayer{
                 result = scanner.nextInt();
                 if(Integer.toString(result).length() != GameModel.getCombinationNum()){
                     result = 0;
-                    GameView.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + "numeros entre 1 et 9.", "Illegal Choice", "info");
+                    GameView.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " numeros entre 1 et 9.", "Illegal Choice", "info");
                 }
             } else {
-                GameView.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + "numeros entre 1 et 9.", "Illegal Choice", "info");
+                GameView.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " numeros entre 1 et 9.", "Illegal Choice", "info");
                 result = 0;
             }
         } while (result == 0);

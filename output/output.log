@@ -42,3 +42,32 @@
 29-09-2019 23:02:09.484 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
 29-09-2019 23:02:09.499 [main] INFO  com.company.View.GameView - InitGame
 29-09-2019 23:02:09.499 [main] INFO  com.company.View.GameView - Menu of the game proposed
+29-09-2019 23:03:25.067 [main] INFO  com.company.View.GameView - StrategyType: Challenger
+29-09-2019 23:03:25.069 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+29-09-2019 23:03:25.069 [main] INFO  com.company.View.GameView - IA generated number 1429
+29-09-2019 23:03:32.851 [main] INFO  com.company.View.GameView - Illegal Choice
+29-09-2019 23:03:40.418 [main] INFO  com.company.View.GameView - Illegal Choice
+29-09-2019 23:04:01.511 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+29-09-2019 23:04:01.517 [main] INFO  com.company.View.GameView - InitGame
+29-09-2019 23:04:01.517 [main] INFO  com.company.View.GameView - Menu of the game proposed
+29-09-2019 23:04:08.276 [main] INFO  com.company.View.GameView - Illegal Choice
+29-09-2019 23:04:08.276 [main] INFO  com.company.View.GameView - Menu of the game proposed
+29-09-2019 23:04:26.759 [main] INFO  com.company.View.GameView - StrategyType: Challenger
+29-09-2019 23:04:26.760 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+29-09-2019 23:04:26.761 [main] INFO  com.company.View.GameView - IA generated number 6142
+29-09-2019 23:04:40.910 [main] INFO  com.company.View.GameView - Illegal Choice
+29-09-2019 23:04:46.802 [main] INFO  com.company.View.GameView - Illegal Choice
+29-09-2019 23:04:54.517 [main] INFO  com.company.View.GameView - Proposition: 1111 -> Réponse :+=++
+29-09-2019 23:05:11.711 [main] INFO  com.company.View.GameView - Proposition: 6890 -> Réponse :=--+
+29-09-2019 23:05:17.018 [main] INFO  com.company.View.GameView - Proposition: 3333 -> Réponse :+-+-
+29-09-2019 23:05:19.635 [main] INFO  com.company.View.GameView - Game Over
+29-09-2019 23:09:13.848 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+29-09-2019 23:09:13.860 [main] INFO  com.company.View.GameView - InitGame
+29-09-2019 23:09:13.860 [main] INFO  com.company.View.GameView - Menu of the game proposed
+29-09-2019 23:09:23.699 [main] INFO  com.company.View.GameView - Illegal Choice
+29-09-2019 23:09:23.699 [main] INFO  com.company.View.GameView - Menu of the game proposed
+29-09-2019 23:10:33.469 [main] INFO  com.company.View.GameView - StrategyType: Challenger
+29-09-2019 23:10:33.471 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+29-09-2019 23:10:33.471 [main] INFO  com.company.View.GameView - IA generated number 2230
+29-09-2019 23:10:47.300 [main] INFO  com.company.View.GameView - Proposition: 1234 -> Réponse :+==-
+29-09-2019 23:10:53.605 [main] INFO  com.company.View.GameView - Illegal Choice

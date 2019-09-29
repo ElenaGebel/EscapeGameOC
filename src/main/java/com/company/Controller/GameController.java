@@ -25,11 +25,9 @@ public class GameController {
         GameView.printOutMessageAndLog("", "InitGame", "info");
 
         int strategyType = 0;
-
+        GameView.printOutMessageAndLog("Pour commencer veillez choisir un mode de jeu: 1 - Challenger, 2 - Defenseur, 3 - Duel",
+                "Menu of the game proposed", "info");
         do {
-            GameView.printOutMessageAndLog("Pour commencer veillez choisir un mode de jeu: 1 - Challenger, 2 - Defenseur, 3 - Duel",
-                    "Menu of the game proposed", "info");
-
             scanner = new Scanner(System.in);
 
             if (scanner.hasNextInt()) {
