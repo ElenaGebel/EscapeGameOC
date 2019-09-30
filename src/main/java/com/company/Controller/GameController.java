@@ -44,7 +44,7 @@ public class GameController {
             }
         } while (strategyType == 0);
 
-        GameView.printOutMessageAndLog("Vous avez choisi un mod de jeu "+ GameModel.getCurrentStrategyTypeName(),
+        GameView.printOutMessageAndLog("Vous avez choisi le mode de jeu "+ GameModel.getCurrentStrategyTypeName(),
                 "StrategyType: " + GameModel.getCurrentStrategyTypeName(), "info");
 
         try {

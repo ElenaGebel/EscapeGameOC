@@ -18,20 +18,20 @@ public class Challenger implements IStrategy{
         player2.getCombination();
         GameView.printOutMessageAndLog("Veillez entrer votre proposition", "IA generated number " + player2.getCombinationToString(), "info");
 
-        User user = (User) player1;
+      //  User user = (User) player1;
         String result = "";
 
         for(int i=0; i <  GameModel.getTryNum(); i++){
 
-            result = player2.compare(user.getCombination());
+            result = player2.compare(player1.getCombination());
 
             if(result != "" && result.length() > 0 && result.indexOf('+') == -1 &&  result.indexOf('-') == -1){
-                GameView.printOutMessageAndLog("Felicitations! Vous avez trouve combinaison" + user.getCombinationToString(), "User guessed a number " + user.getCombinationToString(), "info");
+                GameView.printOutMessageAndLog("Felicitations! Vous avez trouve combinaison" + player1.getCombinationToString(), "User guessed a number " + player1.getCombinationToString(), "info");
                 break;
             }
             else{
                 if (i <  GameModel.getTryNum() - 1)
-                    GameView.printOutMessageAndLog("Proposition: "+ user.getCombinationToString() + " -> Réponse :" + result, "Proposition: "+ user.getCombinationToString() + " -> Réponse :" + result, "info");
+                    GameView.printOutMessageAndLog("Proposition: "+ player1.getCombinationToString() + " -> Réponse :" + result, "Proposition: "+ player1.getCombinationToString() + " -> Réponse :" + result, "info");
                 result = "";
             }
         }

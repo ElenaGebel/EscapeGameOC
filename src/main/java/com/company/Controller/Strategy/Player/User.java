@@ -29,11 +29,11 @@ public class User extends AbstactPlayer{
 
                 if(result.length() != GameModel.getCombinationNum() || !checkString(result)){
                     result = "";
-                    GameView.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " numeros entre 1 et 9.", "Illegal Choice", "info");
+                    GameView.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " numeros entre 0 et 9.", "Illegal Choice", "info");
                 }
 
             } else {
-                GameView.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " numeros entre 1 et 9.", "Illegal Choice", "info");
+                GameView.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " numeros entre 0 et 9.", "Illegal Choice", "info");
                 result = "";
             }
         } while (result == "");
