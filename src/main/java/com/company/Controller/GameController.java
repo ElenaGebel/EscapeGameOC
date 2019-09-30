@@ -37,6 +37,9 @@ public class GameController {
                     GameView.printOutMessageAndLog("Veuillez choisir le numero entre 1 et 3", "Illegal Choice", "info");
                     strategyType = 0;
                 }
+                else{
+                    GameModel.setCurrentStrategyType(strategyType);
+                }
             } else {
                 strategyType = 0;
                 GameView.printOutMessageAndLog("Veuillez choisir le numero entre 1 et 3", "Illegal Choice", "info");

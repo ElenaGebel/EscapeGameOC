@@ -6,7 +6,7 @@ public abstract class AbstactPlayer {
 
     protected ArrayList<Integer> combinationArrayList = new ArrayList<>();
 
-    public ArrayList getCombination(){
+    public ArrayList getCombination(Boolean generateNewCombitation){
         return combinationArrayList;
     }
 
