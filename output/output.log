@@ -71,3 +71,30 @@
 29-09-2019 23:10:33.471 [main] INFO  com.company.View.GameView - IA generated number 2230
 29-09-2019 23:10:47.300 [main] INFO  com.company.View.GameView - Proposition: 1234 -> Réponse :+==-
 29-09-2019 23:10:53.605 [main] INFO  com.company.View.GameView - Illegal Choice
+30-09-2019 12:45:52.681 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+30-09-2019 12:45:52.694 [main] INFO  com.company.View.GameView - InitGame
+30-09-2019 12:45:52.695 [main] INFO  com.company.View.GameView - Menu of the game proposed
+30-09-2019 12:45:58.464 [main] INFO  com.company.View.GameView - Illegal Choice
+30-09-2019 12:46:01.393 [main] INFO  com.company.View.GameView - StrategyType: Challenger
+30-09-2019 12:46:01.395 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+30-09-2019 12:46:01.396 [main] INFO  com.company.View.GameView - IA generated number 3312
+30-09-2019 12:46:21.776 [main] INFO  com.company.View.GameView - Illegal Choice
+30-09-2019 12:47:23.531 [main] INFO  com.company.View.GameView - Illegal Choice
+30-09-2019 12:47:54.088 [main] INFO  com.company.View.GameView - Illegal Choice
+30-09-2019 12:52:55.314 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+30-09-2019 12:52:55.320 [main] INFO  com.company.View.GameView - InitGame
+30-09-2019 12:52:55.321 [main] INFO  com.company.View.GameView - Menu of the game proposed
+30-09-2019 12:53:02.639 [main] INFO  com.company.View.GameView - StrategyType: Challenger
+30-09-2019 12:53:02.641 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+30-09-2019 12:53:02.642 [main] INFO  com.company.View.GameView - IA generated number 6899
+30-09-2019 13:16:35.915 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+30-09-2019 13:16:35.946 [main] INFO  com.company.View.GameView - InitGame
+30-09-2019 13:16:35.947 [main] INFO  com.company.View.GameView - Menu of the game proposed
+30-09-2019 13:16:46.067 [main] INFO  com.company.View.GameView - Illegal Choice
+30-09-2019 13:16:50.545 [main] INFO  com.company.View.GameView - StrategyType: Challenger
+30-09-2019 13:16:50.547 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+30-09-2019 13:16:50.548 [main] INFO  com.company.View.GameView - IA generated number 8673
+30-09-2019 13:16:56.932 [main] INFO  com.company.View.GameView - Illegal Choice
+30-09-2019 13:17:06.385 [main] INFO  com.company.View.GameView - Illegal Choice
+30-09-2019 13:17:12.918 [main] INFO  com.company.View.GameView - Illegal Choice
+30-09-2019 13:18:31.707 [main] INFO  com.company.View.GameView - Illegal Choice

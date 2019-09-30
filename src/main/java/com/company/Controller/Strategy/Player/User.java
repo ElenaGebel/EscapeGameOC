@@ -10,7 +10,7 @@ public class User extends AbstactPlayer{
     @Override
     public ArrayList getCombination() {
         combinationArrayList = new ArrayList<>();
-        String userCombination = Integer.toString(askUserForCombination());
+        String userCombination = askUserForCombination();
 
         for(int i=0; i < userCombination.length(); i++){
             combinationArrayList.add(Character.getNumericValue(userCombination.charAt(i)));
@@ -18,24 +18,31 @@ public class User extends AbstactPlayer{
         return combinationArrayList;
     }
 
-    private int askUserForCombination() {
+    private String askUserForCombination() {
 
-        int result = 0;
+        String result = "";
         do {
             scanner = new Scanner(System.in);
 
             if (scanner.hasNextInt()) {
-                result = scanner.nextInt();
-                if(Integer.toString(result).length() != GameModel.getCombinationNum()){
-                    result = 0;
+                result = scanner.nextLine();
+
+                if(result.length() != GameModel.getCombinationNum() || !checkString(result)){
+                    result = "";
                     GameView.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " numeros entre 1 et 9.", "Illegal Choice", "info");
                 }
+
             } else {
                 GameView.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " numeros entre 1 et 9.", "Illegal Choice", "info");
-                result = 0;
+                result = "";
             }
-        } while (result == 0);
+        } while (result == "");
 
         return result;
+    }
+
+    public boolean checkString(String string) {
+        if (string == null) return false;
+        return string.matches("^-?\\d+$");
     }
 }

@@ -14,13 +14,9 @@ public class ArtificialIntelligence extends AbstactPlayer{
 
     private void generateCombination() {
         combinationArrayList = new ArrayList<>();
-        for (int i = 0; i < GameModel.getCombinationNum(); i++) {
-            if (i==0)
-                combinationArrayList.add(new Random().nextInt(9) + 1);
-            else
-                combinationArrayList.add(new Random().nextInt(10));
+        for (int i = 0; i < GameModel.getCombinationNum(); i++)
+            combinationArrayList.add(new Random().nextInt(9) + 1);
 
-        }
     }
 
 
