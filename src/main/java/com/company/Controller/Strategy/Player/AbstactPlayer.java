@@ -5,9 +5,14 @@ import java.util.ArrayList;
 public abstract class AbstactPlayer {
 
     protected ArrayList<Integer> combinationArrayList = new ArrayList<>();
+    protected ArrayList<Integer> secretCombinationArrayList = new ArrayList<>();
 
     public ArrayList getCombination(Boolean generateNewCombitation, String pattern){
         return combinationArrayList;
+    }
+
+    public ArrayList getSecretCombination(){
+        return secretCombinationArrayList;
     }
 
     public String compare(ArrayList<Integer> arrayListToCompare) {
@@ -28,6 +33,11 @@ public abstract class AbstactPlayer {
     public String getCombinationToString(){
         return combinationArrayList.toString().replaceAll("\\[|\\]|[,][ ]","");
     }
+
+    public String getSecretCombinationToString(){
+        return combinationArrayList.toString().replaceAll("\\[|\\]|[,][ ]","");
+    }
+
 
     public int getCombinationToInteger(){
         return Integer.valueOf(combinationArrayList.toString().replaceAll("\\[|\\]|[,][ ]",""));

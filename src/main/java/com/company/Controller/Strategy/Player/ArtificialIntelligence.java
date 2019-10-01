@@ -9,13 +9,20 @@ public class ArtificialIntelligence extends AbstactPlayer{
     @Override
     public ArrayList getCombination(Boolean generateNewCombitation, String pattern) {
         if(generateNewCombitation) {
-            generateCombination(pattern);
+            generateCombinationWithPattern(pattern);
         }
             return combinationArrayList;
-
     }
 
-    public void generateCombination(String pattern) {
+    @Override
+    public ArrayList getSecretCombination() {
+        if(secretCombinationArrayList.size() == 0)
+            generateCombination(secretCombinationArrayList);
+
+        return secretCombinationArrayList;
+    }
+
+    private void generateCombinationWithPattern(String pattern) {
 
         if(pattern != "" && pattern.length() ==  GameModel.getCombinationNum()
                 && checkSymbolString(pattern) && combinationArrayList != null
@@ -34,11 +41,15 @@ public class ArtificialIntelligence extends AbstactPlayer{
              }
 
         } else{
-            combinationArrayList = new ArrayList<>();
-            for (int i = 0; i < GameModel.getCombinationNum(); i++)
-                combinationArrayList.add(new Random().nextInt(10));
+            generateCombination(combinationArrayList);
         }
 
+    }
+
+    private void generateCombination(ArrayList arrayList) {
+        arrayList = new ArrayList<>();
+        for (int i = 0; i < GameModel.getCombinationNum(); i++)
+            arrayList.add(new Random().nextInt(10));
     }
 
 

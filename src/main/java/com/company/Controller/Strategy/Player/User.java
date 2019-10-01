@@ -20,6 +20,19 @@ public class User extends AbstactPlayer{
         return combinationArrayList;
     }
 
+    @Override
+    public ArrayList getSecretCombination() {
+        if(secretCombinationArrayList.size() == 0){
+            String userSecretCombination = askUserForCombination();
+
+            for(int i=0; i < userSecretCombination.length(); i++){
+                secretCombinationArrayList.add(Character.getNumericValue(userSecretCombination.charAt(i)));
+            }
+        }
+
+        return secretCombinationArrayList;
+    }
+
     private String askUserForCombination() {
 
         String result = "";
