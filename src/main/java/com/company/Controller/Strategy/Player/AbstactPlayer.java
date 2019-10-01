@@ -6,7 +6,7 @@ public abstract class AbstactPlayer {
 
     protected ArrayList<Integer> combinationArrayList = new ArrayList<>();
 
-    public ArrayList getCombination(Boolean generateNewCombitation){
+    public ArrayList getCombination(Boolean generateNewCombitation, String pattern){
         return combinationArrayList;
     }
 
@@ -31,6 +31,16 @@ public abstract class AbstactPlayer {
 
     public int getCombinationToInteger(){
         return Integer.valueOf(combinationArrayList.toString().replaceAll("\\[|\\]|[,][ ]",""));
+    }
+
+    protected boolean checkNumberString(String string) {
+        if (string == null) return false;
+        return string.matches("^-?\\d+$");
+    }
+
+    protected boolean checkSymbolString(String string) {
+        if (string == null) return false;
+        return string.matches("^[-+=]+$");
     }
 
 }

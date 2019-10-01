@@ -8,7 +8,7 @@ import com.company.View.GameView;
 public class User extends AbstactPlayer{
     Scanner scanner;
     @Override
-    public ArrayList getCombination(Boolean generateNewCombitation) {
+    public ArrayList getCombination(Boolean generateNewCombitation, String pattern) {
         if(generateNewCombitation){
             combinationArrayList = new ArrayList<>();
             String userCombination = askUserForCombination();
@@ -29,7 +29,7 @@ public class User extends AbstactPlayer{
             if (scanner.hasNextInt()) {
                 result = scanner.nextLine();
 
-                if(result.length() != GameModel.getCombinationNum() || !checkString(result)){
+                if(result.length() != GameModel.getCombinationNum() || !checkNumberString(result)){
                     result = "";
                     GameView.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " numeros entre 0 et 9.", "Illegal Choice", "info");
                 }
@@ -52,7 +52,7 @@ public class User extends AbstactPlayer{
             if (scanner.hasNextLine()) {
                 result = scanner.nextLine();
 
-                if(!result.matches("^[-+=]+$")){
+                if(!checkSymbolString(result)){
 
                     GameView.printOutMessageAndLog("Veillez donner la reponse en utilisant les symbols +-=, (+) plus grand, plus petit (-) ou si c’est le bon (=).", "Illegal reponse: "+result, "info");
                     result = "";
@@ -70,8 +70,5 @@ public class User extends AbstactPlayer{
         return result;
     }
 
-    public boolean checkString(String string) {
-        if (string == null) return false;
-        return string.matches("^-?\\d+$");
-    }
+
 }

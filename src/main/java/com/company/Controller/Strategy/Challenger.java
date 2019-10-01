@@ -15,7 +15,7 @@ public class Challenger implements IStrategy{
     public void play(AbstactPlayer player1, AbstactPlayer player2) {
         GameView.printOutMessageAndLog("", "Strategy Challenger Activated", "info");
 
-        player2.getCombination(true);
+        player2.getCombination(true, "");
         GameView.printOutMessageAndLog("Veillez entrer votre proposition", "IA generated number " + player2.getCombinationToString(), "info");
 
       //  User user = (User) player1;
@@ -23,7 +23,7 @@ public class Challenger implements IStrategy{
 
         for(int i=0; i <  GameModel.getTryNum(); i++){
 
-            result = player2.compare(player1.getCombination(true));
+            result = player2.compare(player1.getCombination(true, ""));
 
             if(result != "" && result.length() > 0 && result.indexOf('+') == -1 &&  result.indexOf('-') == -1){
                 GameView.printOutMessageAndLog("Felicitations! Vous avez trouve combinaison" + player1.getCombinationToString(), "User guessed a number " + player1.getCombinationToString(), "info");
