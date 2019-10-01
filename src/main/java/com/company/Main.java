@@ -3,7 +3,6 @@ package com.company;
 import com.company.Controller.GameController;
 import com.company.Loader.ConfigLoader;
 
-import com.company.Model.GameModel;
 import com.company.View.GameView;
 import java.io.IOException;
 

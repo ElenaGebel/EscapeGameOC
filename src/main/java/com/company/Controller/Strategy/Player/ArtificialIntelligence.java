@@ -7,7 +7,7 @@ import com.company.View.GameView;
 
 public class ArtificialIntelligence extends AbstactPlayer{
     @Override
-    public ArrayList getCombination(Boolean generateNewCombitation, String pattern) {
+    public ArrayList<Integer> getCombination(Boolean generateNewCombitation, String pattern) {
         if(generateNewCombitation) {
             generateCombinationWithPattern(pattern);
         }
@@ -15,16 +15,16 @@ public class ArtificialIntelligence extends AbstactPlayer{
     }
 
     @Override
-    public ArrayList getSecretCombination() {
+    public ArrayList<Integer> getSecretCombination() {
         if(secretCombinationArrayList.size() == 0)
-            generateCombination(secretCombinationArrayList);
+        secretCombinationArrayList = generateCombination();
 
         return secretCombinationArrayList;
     }
 
     private void generateCombinationWithPattern(String pattern) {
 
-        if(pattern != "" && pattern.length() ==  GameModel.getCombinationNum()
+        if(!pattern.equals("") && pattern.length() ==  GameModel.getCombinationNum()
                 && checkSymbolString(pattern) && combinationArrayList != null
                 && combinationArrayList.size() ==  GameModel.getCombinationNum()){
             char[] patternArray = pattern.toCharArray();
@@ -41,15 +41,17 @@ public class ArtificialIntelligence extends AbstactPlayer{
              }
 
         } else{
-            generateCombination(combinationArrayList);
+            combinationArrayList = generateCombination();
+
         }
 
     }
 
-    private void generateCombination(ArrayList arrayList) {
-        arrayList = new ArrayList<>();
+    private ArrayList<Integer> generateCombination() {
+        ArrayList<Integer> arrayList = new ArrayList<>();
         for (int i = 0; i < GameModel.getCombinationNum(); i++)
             arrayList.add(new Random().nextInt(10));
+        return arrayList;
     }
 
 
