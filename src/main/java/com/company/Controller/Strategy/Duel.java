@@ -46,10 +46,8 @@ public class Duel implements IStrategy {
             resultPlayer1 = player1.compare(player1.getCombination(false, ""), player2.getSecretCombination());
             resultPlayer2 = player2.compare(player2.getCombination(false, ""), player1.getSecretCombination());
 
-
-
-            if(resultPlayer1.equals("")  && resultPlayer1.length() > 0 && resultPlayer1.indexOf('+') == -1 &&  resultPlayer1.indexOf('-') == -1){
-                GameView.printOutMessageAndLog("Felicitations! Vous avez trouve combinaison: " + player1.getCombinationToString(),
+            if(!resultPlayer1.equals("")  && resultPlayer1.length() > 0 && resultPlayer1.indexOf('+') == -1 &&  resultPlayer1.indexOf('-') == -1){
+                GameView.printOutMessageAndLog("Felicitations! Vous avez trouve la combinaison secrete: " + player1.getCombinationToString(),
                         "User winned " + player1.getCombinationToString(), "info");
                 break;
             }else{
@@ -60,26 +58,26 @@ public class Duel implements IStrategy {
                 resultPlayer1 = "";
             }
 
-            if(resultPlayer2.equals("") && resultPlayer2.length() > 0 && resultPlayer2.indexOf('+') == -1 &&  resultPlayer2.indexOf('-') == -1){
-                GameView.printOutMessageAndLog("Itelligence Artificielle a gagne. Votre combinaison secrète :" +
+            if(!resultPlayer2.equals("") && resultPlayer2.length() > 0 && resultPlayer2.indexOf('+') == -1 &&  resultPlayer2.indexOf('-') == -1){
+                GameView.printOutMessageAndLog("Itelligence Artificielle a gagne. Votre combinaison secrète: " +
                         player1.getSecretCombinationToString(), "IA winned " +
                         player2.getCombinationToString(), "info");
                 break;
             } else{
                 if (i <  GameModel.getTryNum() - 1)
-                    GameView.printOutMessageAndLog("Proposition de IA: "+ player2.getCombinationToString() + " -> Réponse :" + resultPlayer2, "Proposition de IA: "+ player2.getCombinationToString() + " -> Réponse :" + resultPlayer2, "info");
+                    GameView.printOutMessageAndLog("Proposition de IA: "+ player2.getCombinationToString() + " -> Réponse: " + resultPlayer2, "Proposition de IA: "+ player2.getCombinationToString() + " -> Réponse :" + resultPlayer2, "info");
 
                 resultPlayer2 = "";
             }
         }
         GameView.printOutMessageAndLog("*******Game over*******", "Game over", "info");
 
-        if(resultPlayer1.equals("") )
+        if(resultPlayer1.equals(""))
             GameView.printOutMessageAndLog("Vous n'avez pas trouve la combinaison secrète de l'Itelligence Artificielle: " +
                     player2.getSecretCombinationToString(), "User n'a pas trouve la combinaison secret: "+
                     player2.getSecretCombinationToString(), "info");
 
-        if(resultPlayer2.equals("") )
+        if(resultPlayer2.equals(""))
             GameView.printOutMessageAndLog("L'itelligence artificielle n'a pas trouve votre combinaison secrète.: " +
                     player1.getSecretCombinationToString(), "IA n'a pas trouve la combinaison secret: "+
                     player1.getSecretCombinationToString(), "info");
