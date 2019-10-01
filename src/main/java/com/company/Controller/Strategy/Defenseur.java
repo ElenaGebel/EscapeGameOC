@@ -16,7 +16,7 @@ public class Defenseur implements IStrategy {
         GameView.printOutMessageAndLog("Veillez entrer votre combinaison secrète : ", "Strategy Defenseur Activated", "info");
 
         user.getCombination(true, "");
-        GameView.printOutMessageAndLog("Votre combinaison secrète : " +  user.getCombinationToString(), "User guessed a secret combination " + user.getCombinationToString(), "info");
+        GameView.printOutMessageAndLog("", "User guessed a secret combination " + user.getCombinationToString(), "info");
 
         String result = "";
 
@@ -24,8 +24,10 @@ public class Defenseur implements IStrategy {
 
             player2.getCombination(true, user.compare(player2.getCombination(false, "")));
 
+            GameView.printOutMessageAndLog("Votre combinaison secrète : " +  user.getCombinationToString() + ". Proposition de Itelligence Artificielle: " + player2.getCombinationToString(), "Itelligence Artificielle guessed a number " + player2.getCombinationToString(), "info");
+            GameView.printOutMessageAndLog("Veillez donner la reponse en utilisant les symbols +-=, " +
+                    "(+) plus grand, plus petit (-) ou si c’est le bon (=)", "", "info");
 
-            GameView.printOutMessageAndLog("Proposition de Itelligence Artificielle: " + player2.getCombinationToString(), "Itelligence Artificielle guessed a number " + player2.getCombinationToString(), "info");
             result = user.compare(player2.getCombination(false, ""));
             user.askUserForReponse(result);
 

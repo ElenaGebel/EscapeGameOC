@@ -58,7 +58,7 @@ public class User extends AbstactPlayer{
                     result = "";
                 }
                 else if (!param.equals(result)){
-                    GameView.printOutMessageAndLog("Veillez donner la bonne reponse en utilisant les symbols +-=, (+) plus grand, plus petit (-) ou si c’est le bon (=).", "Illegal reponse: "+result, "info");
+                    GameView.printOutMessageAndLog("La reponse n est pas bonne. Veillez essayer encore.", "Illegal reponse: "+result, "info");
                     result = "";
                 }
             } else {
