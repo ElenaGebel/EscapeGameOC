@@ -42,10 +42,6 @@ public final class GameModel {
         return configPath;
     }
 
-    public static int getCurrentStrategyType() {
-
-        return currentStrategyType;
-    }
 
     public static void setCurrentStrategyType(int currentStrategyType) {
         if( currentStrategyType >= 1 && currentStrategyType <= 3)
