@@ -323,3 +323,6 @@
 01-10-2019 15:16:36.766 [main] INFO  com.company.View.GameView - Game over
 01-10-2019 15:16:36.767 [main] INFO  com.company.View.GameView - User n'a pas trouve la combinaison secret: 6018
 01-10-2019 15:16:36.767 [main] INFO  com.company.View.GameView - IA n'a pas trouve la combinaison secret: 1234
+02-10-2019 23:45:36.289 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+02-10-2019 23:45:36.297 [main] INFO  com.company.View.GameView - InitGame
+02-10-2019 23:45:36.297 [main] INFO  com.company.View.GameView - Menu of the game proposed
