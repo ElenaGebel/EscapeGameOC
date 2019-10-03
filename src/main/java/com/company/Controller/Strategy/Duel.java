@@ -3,10 +3,18 @@ package com.company.Controller.Strategy;
 import com.company.Controller.Strategy.Player.AbstactPlayer;
 import com.company.Model.GameModel;
 import com.company.Utility.PrintOutUtility;
-
+/**
+ * Class responsable de la logique du mode Duel
+ */
 public class Duel implements IStrategy {
     public Duel() {
     }
+
+    /**
+     * commence le jeu en mode Duel
+     * @player1 - intance of User
+     * @player2 - intance of Itelligence Artificielle
+     */
 
     @Override
     public void play(AbstactPlayer player1, AbstactPlayer player2) {

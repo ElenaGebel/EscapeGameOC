@@ -9,6 +9,10 @@ import com.company.Model.GameModel;
 import java.lang.reflect.InvocationTargetException;
 import java.util.Scanner;
 
+/**
+ * Class responsable de la logique du jeu
+ */
+
 public class GameController {
 
     private Scanner scanner;
@@ -17,9 +21,12 @@ public class GameController {
 
     public GameController() {
 
-
     }
 
+    /**
+     * Init le jeu pour la premier fois
+     * Demande rejouer le jeu
+     */
     public void initGames(){
         initGame(true);
 
@@ -61,6 +68,12 @@ public class GameController {
         } while (replay);
     }
 
+    /**
+     * Сrée Strategy Class en fonction de mode du jeu choisi
+     * 1 - Challenger, 2 - Defenseur, 3 - Duel
+     * @askForStrategyType - parametre sert pour proposer choisir le mode du jeu ou pas
+     */
+
     private void initGame(Boolean askForStrategyType)  {
 
         if (askForStrategyType || GameModel.getCurrentStrategyType() < 1 || GameModel.getCurrentStrategyType() > 3)
@@ -101,6 +114,10 @@ public class GameController {
 
      }
 
+    /**
+     * Propose de choisir le mode du jeu
+     * 1 - Challenger, 2 - Defenseur, 3 - Duel
+     */
      private void askForStrategyType(){
          restoreDefault();
          Scanner scanner;
@@ -132,6 +149,9 @@ public class GameController {
 
      }
 
+    /**
+     * Sets les parametres to zero
+     */
      private void restoreDefault() {
         currentStrategyInstance = null;
         GameModel.setCurrentStrategyType(1);

@@ -3,13 +3,19 @@ package com.company.Controller.Strategy;
 import com.company.Controller.Strategy.Player.AbstactPlayer;
 import com.company.Utility.PrintOutUtility;
 import com.company.Model.GameModel;
-
+/**
+ * Class responsable de la logique du mode Challenger
+ */
 public class Challenger implements IStrategy{
 
 
     public Challenger() {
     }
-
+    /**
+     * commence le jeu en mode Challenger
+     * @player1 - intance of User
+     * @player2 - intance of Itelligence Artificielle
+     */
     @Override
     public void play(AbstactPlayer player1, AbstactPlayer player2) {
         PrintOutUtility.printOutMessageAndLog("", "Strategy Challenger Activated", "info");

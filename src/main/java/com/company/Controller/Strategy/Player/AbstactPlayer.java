@@ -1,11 +1,16 @@
 package com.company.Controller.Strategy.Player;
 
 import java.util.ArrayList;
-
+/**
+ * Class Abstact class mere pour User et ArtificialIntelligence
+ */
 public abstract class AbstactPlayer {
 
     protected ArrayList<Integer> combinationArrayList = new ArrayList<>();
     protected ArrayList<Integer> secretCombinationArrayList = new ArrayList<>();
+
+    public AbstactPlayer() {
+    }
 
     public ArrayList<Integer> getCombination(Boolean generateNewCombitation, String pattern){
         return combinationArrayList;

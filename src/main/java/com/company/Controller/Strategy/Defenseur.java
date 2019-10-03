@@ -4,9 +4,18 @@ import com.company.Controller.Strategy.Player.AbstactPlayer;
 import com.company.Model.GameModel;
 import com.company.Utility.PrintOutUtility;
 
+/**
+ * Class responsable de la logique du mode Defenseur
+ */
 public class Defenseur implements IStrategy {
     public Defenseur() {
     }
+
+    /**
+     * commence le jeu en mode Defenseur
+     * @player1 - intance of User
+     * @player2 - intance of Itelligence Artificielle
+     */
 
     @Override
     public void play(AbstactPlayer player1, AbstactPlayer player2) {
