@@ -428,3 +428,9 @@
 03-10-2019 09:20:10.542 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
 03-10-2019 09:20:10.554 [main] INFO  com.company.View.GameView - Menu of the game proposed
 03-10-2019 09:20:13.522 [main] INFO  com.company.View.GameView - Illegal Choice
+03-10-2019 09:44:47.633 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4
+03-10-2019 09:44:47.641 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+03-10-2019 09:44:55.848 [main] INFO  com.company.Utility.PrintOutUtility - StrategyType: Challenger
+03-10-2019 09:44:55.848 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+03-10-2019 09:44:55.850 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Challenger Activated
+03-10-2019 09:44:55.851 [main] INFO  com.company.Utility.PrintOutUtility - IA generated a number 6718

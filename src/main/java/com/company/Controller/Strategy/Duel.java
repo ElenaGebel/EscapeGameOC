@@ -24,7 +24,7 @@ public class Duel implements IStrategy {
 
         String message = "Itelligence Artificielle a choisi sa combinaison secrète";
         if(GameModel.isModeDevelopeur())
-            message +=  ": " + player2.getSecretCombinationToString();
+            message +=  ": " + player2.getSecretCombinationToString() + "(visible en mode developpeur)";
 
         PrintOutUtility.printOutMessageAndLog(message ,
                 "IA generated a secret combination " +

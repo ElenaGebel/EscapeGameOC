@@ -17,7 +17,8 @@ public class Main {
              gameController.initGames();
          }catch (IOException e)
          {
-
+             PrintOutUtility.printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
+                     "" + e.getMessage(), "error");
          }
     }
 }
