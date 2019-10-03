@@ -2,8 +2,7 @@ package com.company;
 
 import com.company.Controller.GameController;
 import com.company.Loader.ConfigLoader;
-
-import com.company.View.GameView;
+import com.company.Utility.PrintOutUtility;
 import java.io.IOException;
 
 public class Main {
@@ -12,7 +11,7 @@ public class Main {
          ConfigLoader loader = new ConfigLoader();
          try{
              loader.load();
-             GameView.printOutMessageAndLog( "Bienvenue dans le jeu", "", "info");
+             PrintOutUtility.printOutMessageAndLog( "Bienvenue dans le jeu", "", "info");
 
              GameController gameController = new GameController();
              gameController.initGames();

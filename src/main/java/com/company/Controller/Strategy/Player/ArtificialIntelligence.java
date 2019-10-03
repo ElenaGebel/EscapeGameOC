@@ -3,7 +3,6 @@ import java.util.ArrayList;
 import java.util.Random;
 
 import com.company.Model.GameModel;
-import com.company.View.GameView;
 
 public class ArtificialIntelligence extends AbstactPlayer{
     @Override

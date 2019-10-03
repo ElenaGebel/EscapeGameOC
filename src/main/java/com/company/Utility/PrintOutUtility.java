@@ -1,13 +1,13 @@
-package com.company.View;
+package com.company.Utility;
 
 import com.company.Model.GameModel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
-public final class GameView {
+public final class PrintOutUtility {
     public static Logger logger = LogManager.getLogger();;
 
-    private GameView() {
+    private PrintOutUtility() {
 
     }
 
@@ -30,3 +30,4 @@ public final class GameView {
         }
     }
 }
+

@@ -1,8 +1,7 @@
 package com.company.Controller.Strategy;
 
 import com.company.Controller.Strategy.Player.AbstactPlayer;
-import com.company.Controller.Strategy.Player.User;
-import com.company.View.GameView;
+import com.company.Utility.PrintOutUtility;
 import com.company.Model.GameModel;
 
 public class Challenger implements IStrategy{
@@ -13,7 +12,7 @@ public class Challenger implements IStrategy{
 
     @Override
     public void play(AbstactPlayer player1, AbstactPlayer player2) {
-        GameView.printOutMessageAndLog("", "Strategy Challenger Activated", "info");
+        PrintOutUtility.printOutMessageAndLog("", "Strategy Challenger Activated", "info");
 
         player2.getSecretCombination();
 
@@ -23,7 +22,7 @@ public class Challenger implements IStrategy{
         else
             message += ". ";
 
-        GameView.printOutMessageAndLog(message + "Veillez entrer votre proposition.", "IA generated a number " + player2.getSecretCombinationToString(), "info");
+        PrintOutUtility.printOutMessageAndLog(message + "Veillez entrer votre proposition.", "IA generated a number " + player2.getSecretCombinationToString(), "info");
 
       //  User user = (User) player1;
         String result = "";
@@ -33,17 +32,17 @@ public class Challenger implements IStrategy{
             result = player2.compare(player2.getSecretCombination(), player1.getCombination(true, ""));
 
             if(result != "" && result.length() > 0 && result.indexOf('+') == -1 &&  result.indexOf('-') == -1){
-                GameView.printOutMessageAndLog("Felicitations! Vous avez trouve combinaison: " + player1.getCombinationToString(), "User guessed a number " + player1.getCombinationToString(), "info");
+                PrintOutUtility.printOutMessageAndLog("Felicitations! Vous avez trouve combinaison: " + player1.getCombinationToString(), "User guessed a number " + player1.getCombinationToString(), "info");
                 break;
             }
             else{
                 if (i <  GameModel.getTryNum() - 1)
-                    GameView.printOutMessageAndLog("Proposition: "+ player1.getCombinationToString() + " -> Réponse: " + result, "Proposition: "+ player1.getCombinationToString() + " -> Réponse: " + result, "info");
+                    PrintOutUtility.printOutMessageAndLog("Proposition: "+ player1.getCombinationToString() + " -> Réponse: " + result, "Proposition: "+ player1.getCombinationToString() + " -> Réponse: " + result, "info");
                 result = "";
             }
         }
         if(result == "")
-            GameView.printOutMessageAndLog("Game over. Itelligence Artificielle a gagne. Combinaison secrète: " + player2.getSecretCombinationToString(), "Game Over", "info");
+            PrintOutUtility.printOutMessageAndLog("Game over. Itelligence Artificielle a gagne. Combinaison secrète: " + player2.getSecretCombinationToString(), "Game Over", "info");
 
 
 

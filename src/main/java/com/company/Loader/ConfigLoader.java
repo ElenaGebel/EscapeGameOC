@@ -6,7 +6,7 @@ import java.io.InputStream;
 import java.util.Date;
 import java.util.Properties;
 import com.company.Model.GameModel;
-import com.company.View.GameView;
+import com.company.Utility.PrintOutUtility;
 
 public class ConfigLoader {
 
@@ -55,10 +55,10 @@ public class ConfigLoader {
                 GameModel.setTryNum(tryNum);
                 GameModel.setModeDevelopeur(modeDevelopeur);
 
-                GameView.printOutMessageAndLog("", "Config loaded combinationNum=" + combinationNum + " tryNum=" + tryNum, "info");
+                PrintOutUtility.printOutMessageAndLog("", "Config loaded combinationNum=" + combinationNum + " tryNum=" + tryNum, "info");
 
             } catch (Exception e) {
-                GameView.printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
+                PrintOutUtility.printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
                         "Exception" + e.getMessage(), "error");
             } finally {
                 inputStream.close();
