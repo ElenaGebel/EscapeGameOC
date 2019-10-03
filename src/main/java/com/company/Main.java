@@ -15,7 +15,7 @@ public class Main {
              GameView.printOutMessageAndLog( "Bienvenue dans le jeu", "", "info");
 
              GameController gameController = new GameController();
-             gameController.initGame();
+             gameController.initGames();
          }catch (IOException e)
          {
 

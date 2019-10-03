@@ -5,6 +5,9 @@ public final class GameModel {
     private static Boolean modeDevelopeur;
     private static int tryNum;
     private static int combinationNum;
+
+
+
     private static int currentStrategyType;
     private static String configPath;
     private static String[] strategyTypeArray;
@@ -49,6 +52,10 @@ public final class GameModel {
         else
             GameModel.currentStrategyType = 1;
         currentStrategyTypeName = strategyTypeArray[currentStrategyType-1];
+    }
+
+    public static int getCurrentStrategyType() {
+        return currentStrategyType;
     }
 
     public static Boolean isModeDevelopeur() {

@@ -326,3 +326,105 @@
 02-10-2019 23:45:36.289 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
 02-10-2019 23:45:36.297 [main] INFO  com.company.View.GameView - InitGame
 02-10-2019 23:45:36.297 [main] INFO  com.company.View.GameView - Menu of the game proposed
+03-10-2019 05:46:49.201 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+03-10-2019 05:46:49.207 [main] INFO  com.company.View.GameView - InitGame
+03-10-2019 05:46:49.208 [main] INFO  com.company.View.GameView - Menu of the game proposed
+03-10-2019 05:46:56.813 [main] INFO  com.company.View.GameView - StrategyType: Duel
+03-10-2019 05:46:56.816 [main] INFO  com.company.View.GameView - Strategy Duel Activated
+03-10-2019 05:47:02.474 [main] INFO  com.company.View.GameView - Illegal Choice
+03-10-2019 05:47:04.718 [main] INFO  com.company.View.GameView - Illegal Choice
+03-10-2019 05:47:11.601 [main] INFO  com.company.View.GameView - User choosed a secret combination 1234
+03-10-2019 05:47:11.601 [main] INFO  com.company.View.GameView - IA generated a secret combination 5526
+03-10-2019 05:47:22.488 [main] INFO  com.company.View.GameView - User proposition: 1234 -> Réponse: --+-
+03-10-2019 05:47:22.488 [main] INFO  com.company.View.GameView - Proposition de IA: 1253 -> Réponse :==+-
+03-10-2019 05:47:30.405 [main] INFO  com.company.View.GameView - User proposition: 1234 -> Réponse: --+-
+03-10-2019 05:47:30.405 [main] INFO  com.company.View.GameView - Proposition de IA: 1233 -> Réponse :===-
+03-10-2019 05:47:33.669 [main] INFO  com.company.View.GameView - User proposition: 1234 -> Réponse: --+-
+03-10-2019 05:47:33.669 [main] INFO  com.company.View.GameView - Proposition de IA: 1233 -> Réponse :===-
+03-10-2019 05:47:36.582 [main] INFO  com.company.View.GameView - IA winned 1234
+03-10-2019 05:47:36.583 [main] INFO  com.company.View.GameView - Game over
+03-10-2019 05:47:36.584 [main] INFO  com.company.View.GameView - User n'a pas trouve la combinaison secret: 5526
+03-10-2019 08:59:05.187 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+03-10-2019 08:59:05.196 [main] INFO  com.company.View.GameView - Menu of the game proposed
+03-10-2019 08:59:15.963 [main] INFO  com.company.View.GameView - StrategyType: Duel
+03-10-2019 08:59:15.964 [main] INFO  com.company.View.GameView - InitGame
+03-10-2019 08:59:15.968 [main] INFO  com.company.View.GameView - Strategy Duel Activated
+03-10-2019 08:59:24.148 [main] INFO  com.company.View.GameView - User choosed a secret combination 1234
+03-10-2019 08:59:24.149 [main] INFO  com.company.View.GameView - IA generated a secret combination 3782
+03-10-2019 08:59:27.797 [main] INFO  com.company.View.GameView - User proposition: 1234 -> Réponse: ---+
+03-10-2019 08:59:27.798 [main] INFO  com.company.View.GameView - Proposition de IA: 9076 -> Réponse :+-++
+03-10-2019 08:59:29.849 [main] INFO  com.company.View.GameView - User proposition: 1234 -> Réponse: ---+
+03-10-2019 08:59:29.850 [main] INFO  com.company.View.GameView - Proposition de IA: 2755 -> Réponse :++++
+03-10-2019 08:59:31.591 [main] INFO  com.company.View.GameView - User proposition: 1234 -> Réponse: ---+
+03-10-2019 08:59:31.592 [main] INFO  com.company.View.GameView - Proposition de IA: 0333 -> Réponse :-+=-
+03-10-2019 08:59:33.816 [main] INFO  com.company.View.GameView - Illegal Choice
+03-10-2019 08:59:36.095 [main] INFO  com.company.View.GameView - Game over
+03-10-2019 08:59:36.096 [main] INFO  com.company.View.GameView - User n'a pas trouve la combinaison secret: 3782
+03-10-2019 08:59:36.096 [main] INFO  com.company.View.GameView - IA n'a pas trouve la combinaison secret: 1234
+03-10-2019 08:59:56.257 [main] INFO  com.company.View.GameView - Play again proposed
+03-10-2019 08:59:56.257 [main] INFO  com.company.View.GameView - InitGame
+03-10-2019 08:59:56.257 [main] INFO  com.company.View.GameView - Strategy Duel Activated
+03-10-2019 09:01:43.721 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+03-10-2019 09:01:43.732 [main] INFO  com.company.View.GameView - Menu of the game proposed
+03-10-2019 09:01:50.604 [main] INFO  com.company.View.GameView - StrategyType: Challenger
+03-10-2019 09:01:50.604 [main] INFO  com.company.View.GameView - InitGame
+03-10-2019 09:01:50.606 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+03-10-2019 09:01:50.607 [main] INFO  com.company.View.GameView - IA generated a number 5836
+03-10-2019 09:01:56.084 [main] INFO  com.company.View.GameView - Proposition: 1234 -> Réponse: ++=+
+03-10-2019 09:02:01.259 [main] INFO  com.company.View.GameView - Proposition: 1234 -> Réponse: ++=+
+03-10-2019 09:02:09.005 [main] INFO  com.company.View.GameView - User guessed a number 5836
+03-10-2019 09:02:09.005 [main] INFO  com.company.View.GameView - Play again proposed
+03-10-2019 09:02:27.408 [main] INFO  com.company.View.GameView - InitGame
+03-10-2019 09:02:27.408 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+03-10-2019 09:02:27.408 [main] INFO  com.company.View.GameView - IA generated a number 7329
+03-10-2019 09:02:55.935 [main] INFO  com.company.View.GameView - Proposition: 1234 -> Réponse: ++-+
+03-10-2019 09:02:57.878 [main] INFO  com.company.View.GameView - Proposition: 1234 -> Réponse: ++-+
+03-10-2019 09:03:00.546 [main] INFO  com.company.View.GameView - Illegal Choice
+03-10-2019 09:03:02.972 [main] INFO  com.company.View.GameView - Proposition: 1234 -> Réponse: ++-+
+03-10-2019 09:03:10.619 [main] INFO  com.company.View.GameView - Game Over
+03-10-2019 09:03:10.619 [main] INFO  com.company.View.GameView - Play again proposed
+03-10-2019 09:03:26.701 [main] INFO  com.company.View.GameView - Menu of the game proposed
+03-10-2019 09:03:42.355 [main] INFO  com.company.View.GameView - StrategyType: Challenger
+03-10-2019 09:03:42.355 [main] INFO  com.company.View.GameView - InitGame
+03-10-2019 09:03:42.355 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+03-10-2019 09:03:42.356 [main] INFO  com.company.View.GameView - IA generated a number 0781
+03-10-2019 09:03:53.060 [main] INFO  com.company.View.GameView - Proposition: 1234 -> Réponse: -++-
+03-10-2019 09:03:55.469 [main] INFO  com.company.View.GameView - Proposition: 1234 -> Réponse: -++-
+03-10-2019 09:03:57.248 [main] INFO  com.company.View.GameView - Proposition: 1234 -> Réponse: -++-
+03-10-2019 09:03:59.046 [main] INFO  com.company.View.GameView - Game Over
+03-10-2019 09:03:59.046 [main] INFO  com.company.View.GameView - Play again proposed
+03-10-2019 09:04:23.744 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+03-10-2019 09:04:23.749 [main] INFO  com.company.View.GameView - Menu of the game proposed
+03-10-2019 09:04:28.874 [main] INFO  com.company.View.GameView - StrategyType: Defenseur
+03-10-2019 09:04:28.874 [main] INFO  com.company.View.GameView - InitGame
+03-10-2019 09:04:28.879 [main] INFO  com.company.View.GameView - Strategy Defenseur Activated
+03-10-2019 09:04:41.682 [main] INFO  com.company.View.GameView - User entered a secret combination 1234
+03-10-2019 09:04:41.683 [main] INFO  com.company.View.GameView - Itelligence Artificielle guessed a number 8945
+03-10-2019 09:04:59.721 [main] INFO  com.company.View.GameView - Proposition: 8945 -> Réponse :----
+03-10-2019 09:04:59.721 [main] INFO  com.company.View.GameView - Itelligence Artificielle guessed a number 7703
+03-10-2019 09:05:30.293 [main] INFO  com.company.View.GameView - Proposition: 7703 -> Réponse :--++
+03-10-2019 09:05:30.293 [main] INFO  com.company.View.GameView - Itelligence Artificielle guessed a number 4244
+03-10-2019 09:05:37.674 [main] INFO  com.company.View.GameView - Illegal reponse: ++++
+03-10-2019 09:06:02.762 [main] INFO  com.company.View.GameView - Proposition: 4244 -> Réponse :-=-=
+03-10-2019 09:06:02.763 [main] INFO  com.company.View.GameView - Itelligence Artificielle guessed a number 2204
+03-10-2019 09:06:34.021 [main] INFO  com.company.View.GameView - Game Over
+03-10-2019 09:06:34.021 [main] INFO  com.company.View.GameView - Play again proposed
+03-10-2019 09:06:46.921 [main] INFO  com.company.View.GameView - Play again proposed
+03-10-2019 09:07:08.466 [main] INFO  com.company.View.GameView - Play again proposed
+03-10-2019 09:07:11.629 [main] INFO  com.company.View.GameView - Play again proposed
+03-10-2019 09:07:37.004 [main] INFO  com.company.View.GameView - Play again proposed
+03-10-2019 09:07:44.828 [main] INFO  com.company.View.GameView - Play again proposed
+03-10-2019 09:07:56.323 [main] INFO  com.company.View.GameView - InitGame
+03-10-2019 09:07:56.324 [main] INFO  com.company.View.GameView - Strategy Defenseur Activated
+03-10-2019 09:11:30.812 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+03-10-2019 09:11:30.821 [main] INFO  com.company.View.GameView - Menu of the game proposed
+03-10-2019 09:11:37.617 [main] INFO  com.company.View.GameView - Illegal Choice
+03-10-2019 09:11:39.950 [main] INFO  com.company.View.GameView - Illegal Choice
+03-10-2019 09:11:42.705 [main] INFO  com.company.View.GameView - Illegal Choice
+03-10-2019 09:11:45.792 [main] INFO  com.company.View.GameView - StrategyType: Challenger
+03-10-2019 09:11:45.792 [main] INFO  com.company.View.GameView - InitGame
+03-10-2019 09:11:45.795 [main] INFO  com.company.View.GameView - Strategy Challenger Activated
+03-10-2019 09:11:45.795 [main] INFO  com.company.View.GameView - IA generated a number 2526
+03-10-2019 09:20:10.542 [main] INFO  com.company.View.GameView - Config loaded combinationNum=4 tryNum=4
+03-10-2019 09:20:10.554 [main] INFO  com.company.View.GameView - Menu of the game proposed
+03-10-2019 09:20:13.522 [main] INFO  com.company.View.GameView - Illegal Choice
