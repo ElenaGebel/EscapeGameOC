@@ -434,3 +434,30 @@
 03-10-2019 09:44:55.848 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
 03-10-2019 09:44:55.850 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Challenger Activated
 03-10-2019 09:44:55.851 [main] INFO  com.company.Utility.PrintOutUtility - IA generated a number 6718
+03-10-2019 10:33:52.120 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4
+03-10-2019 10:33:52.131 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+03-10-2019 10:33:54.988 [main] INFO  com.company.Utility.PrintOutUtility - StrategyType: Challenger
+03-10-2019 10:33:54.988 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+03-10-2019 10:33:54.993 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Challenger Activated
+03-10-2019 10:33:54.993 [main] INFO  com.company.Utility.PrintOutUtility - IA generated a number 8836
+03-10-2019 10:34:01.711 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 1234 -> Réponse: ++=+
+03-10-2019 10:36:09.005 [main] INFO  com.company.Utility.PrintOutUtility - Illegal Choice
+03-10-2019 10:36:12.067 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 1234 -> Réponse: ++=+
+03-10-2019 10:36:13.852 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 1234 -> Réponse: ++=+
+03-10-2019 10:36:16.269 [main] INFO  com.company.Utility.PrintOutUtility - Game Over
+03-10-2019 10:36:16.269 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
+03-10-2019 11:13:35.339 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4
+03-10-2019 11:13:35.356 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+03-10-2019 11:13:41.958 [main] INFO  com.company.Utility.PrintOutUtility - StrategyType: Defenseur
+03-10-2019 11:13:41.958 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+03-10-2019 11:13:41.962 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Defenseur Activated
+03-10-2019 11:13:51.380 [main] INFO  com.company.Utility.PrintOutUtility - User entered a secret combination 1234
+03-10-2019 11:13:51.381 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 3843
+03-10-2019 11:14:23.960 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 3843 -> Réponse :---+
+03-10-2019 11:14:23.961 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 0208
+03-10-2019 11:14:43.219 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 0208 -> Réponse :+=+-
+03-10-2019 11:14:43.220 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 3283
+03-10-2019 11:14:59.275 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 3283 -> Réponse :-=-+
+03-10-2019 11:14:59.276 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 2266
+03-10-2019 11:15:16.162 [main] INFO  com.company.Utility.PrintOutUtility - Game Over
+03-10-2019 11:15:16.162 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed

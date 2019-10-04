@@ -31,7 +31,6 @@ public class ConfigLoader {
                     throw new FileNotFoundException("property file '" + configName + "' not found in the classpath");
                 }
 
-                Date time = new Date(System.currentTimeMillis());
                 int combinationNum;
                 try {
                     combinationNum = Integer.parseInt(properties.getProperty("combinationNum"));
