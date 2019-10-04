@@ -105,7 +105,6 @@ public class ArtificialIntelligence extends AbstactPlayer{
                 element.setMin(element.proposition);
         }
         element.countProposition();
-        System.out.println("element: "+element.toString());
         return element;
 
     }
