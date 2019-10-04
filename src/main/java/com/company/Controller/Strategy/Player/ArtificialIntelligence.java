@@ -23,26 +23,26 @@ public class ArtificialIntelligence extends AbstactPlayer{
         return secretCombinationArrayList;
     }
 
-    public void binarySearchCombinationWithPattern(String pattern) {
+    private void binarySearchCombinationWithPattern(String pattern) {
 
         if(!pattern.equals("") && pattern.length() ==  GameModel.getCombinationNum()
-                && checkSymbolString(pattern) && combinationArrayList != null
-                && combinationArrayList.size() ==  GameModel.getCombinationNum()){
+                    && checkSymbolString(pattern) && combinationArrayList != null
+                    && combinationArrayList.size() ==  GameModel.getCombinationNum()
+                    && arrayForBinarySearch != null){
+
             char[] patternArray = pattern.toCharArray();
 
+            CombinationElement element;
             for (int i = 0; i < combinationArrayList.size(); i++){
 
-                if(Character.toString(patternArray[i]).equals("-")  && combinationArrayList.get(i) > 0){
-                    combinationArrayList.set(i, new Random().nextInt(combinationArrayList.get(i)));
-
-                }else if (Character.toString(patternArray[i]).equals("+") && combinationArrayList.get(i) < 9){
-
-                    combinationArrayList.set(i, new Random().nextInt(10 - combinationArrayList.get(i)) + combinationArrayList.get(i));
+                if(arrayForBinarySearch.get(i) != null){
+                    element = binarySearch(arrayForBinarySearch.get(i), Character.toString(patternArray[i]));
+                    arrayForBinarySearch.set(i, element);
+                    combinationArrayList.set(i, element.proposition);
                 }
             }
-
         } else{
-            combinationArrayList = generateCombination();
+            combinationArrayList = fillArrayForBinarySearch(0, 9);
 
         }
     }
@@ -71,6 +71,18 @@ public class ArtificialIntelligence extends AbstactPlayer{
         }
     }*/
 
+    private ArrayList<Integer> fillArrayForBinarySearch(int min, int max) {
+        arrayForBinarySearch = new ArrayList<>();
+        ArrayList<Integer> arrayList = new ArrayList<>();
+        CombinationElement element;
+        for (int i = 0; i < GameModel.getCombinationNum(); i++){
+            element = new CombinationElement(min, max);
+            arrayForBinarySearch.add(new CombinationElement(min, max));
+            arrayList.add(Integer.valueOf(element.proposition));
+        }
+        return arrayList;
+    }
+
     private ArrayList<Integer> generateCombination() {
         ArrayList<Integer> arrayList = new ArrayList<>();
         for (int i = 0; i < GameModel.getCombinationNum(); i++)
@@ -78,9 +90,7 @@ public class ArtificialIntelligence extends AbstactPlayer{
         return arrayList;
     }
 
-    public CombinationElement binarySearch(CombinationElement element,  String pattern) {
-        int newNum;
-
+    private CombinationElement binarySearch(CombinationElement element,  String pattern) {
         if(pattern.equals("-")){
             if(element.proposition > element.getMin())
                 element.setMax(element.proposition - 1);
@@ -95,7 +105,7 @@ public class ArtificialIntelligence extends AbstactPlayer{
                 element.setMin(element.proposition);
         }
         element.countProposition();
-        System.out.println("newNum= "+element.toString());
+        System.out.println("element: "+element.toString());
         return element;
 
     }

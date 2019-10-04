@@ -6,7 +6,7 @@ public class CombinationElement {
     int max;
     int proposition;
 
-    public CombinationElement(int min, int max, int proposition) {
+    public CombinationElement(int min, int max) {
         this.min = min;
         this.max = max;
         countProposition();
@@ -36,4 +36,8 @@ public class CombinationElement {
         this.proposition = min + (max - min)/2;
     }
 
+    @Override
+    public String toString() {
+        return "min=" + min + " max=" + max + " proposition= "+ proposition;
+    }
 }
