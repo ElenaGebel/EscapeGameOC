@@ -22,6 +22,12 @@ public class Defenseur implements IStrategy {
 
     @Override
     public void play(AbstactPlayer player1, AbstactPlayer player2) {
+        if(GameModel.isModeDeveloper() && GameModel.getAlgorithmType() == 1)
+            PrintOutUtility.printOutMessageAndLog("algorithme de recherche binaire (affiché en mode developpeur).",
+                    "", "info");
+        else if(GameModel.isModeDeveloper() && GameModel.getAlgorithmType() != 1)
+            PrintOutUtility.printOutMessageAndLog("algorithme de recherche random (affiché en mode developpeur).",
+                    "", "info");
 
         PrintOutUtility.printOutMessageAndLog("Veillez saisir votre combinaison secrète : ",
                 "Strategy Defenseur Activated", "info");
@@ -41,10 +47,15 @@ public class Defenseur implements IStrategy {
                     +  player1.getSecretCombinationToString() + ". Proposition de l'itelligence artificielle: "
                     + player2.getCombinationToString(), "IA guessed a number "
                     + player2.getCombinationToString(), "info");
-            PrintOutUtility.printOutMessageAndLog("Veillez saisir la reponse en utilisant les symbols +-=, "
+            PrintOutUtility.printOutMessageAndLog("Veillez saisir la réponse en utilisant les caractères +-=, "
                             + System.lineSeparator() + "(+) plus grand, plus petit (-) ou si c’est le bon (=)", "", "info");
 
             result = player1.compare(player1.getSecretCombination(), player2.getCombination(false, ""));
+
+            if(GameModel.isModeDeveloper())
+                PrintOutUtility.printOutMessageAndLog("La bonne réponse: " + result + " (affiché en mode developpeur).",
+                        "", "info");
+
             player1.askToCompare(result);
 
             if(result != "" && result.length() > 0 && result.indexOf('+') == -1 &&  result.indexOf('-') == -1){

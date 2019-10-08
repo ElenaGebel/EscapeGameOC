@@ -22,6 +22,13 @@ public class Duel implements IStrategy {
     @Override
     public void play(AbstactPlayer player1, AbstactPlayer player2) {
 
+        if(GameModel.isModeDeveloper() && GameModel.getAlgorithmType() == 1)
+            PrintOutUtility.printOutMessageAndLog("algorithme de recherche binaire (affiché en mode developpeur).",
+                    "", "info");
+        else if(GameModel.isModeDeveloper() && GameModel.getAlgorithmType() != 1)
+            PrintOutUtility.printOutMessageAndLog("algorithme de recherche random (affiché en mode developpeur).",
+                    "", "info");
+
         PrintOutUtility.printOutMessageAndLog("Veillez saisir votre combinaison secrète : ",
                 "Strategy Duel Activated", "info");
 
@@ -35,7 +42,7 @@ public class Duel implements IStrategy {
 
         String message = "L’intelligence artificielle a choisi sa combinaison secrète";
         if(GameModel.isModeDeveloper())
-            message +=  ": " + player2.getSecretCombinationToString() + " (visible en mode développeur)";
+            message +=  ": " + player2.getSecretCombinationToString() + " (affiché en mode développeur)";
 
         PrintOutUtility.printOutMessageAndLog(message ,
                 "IA generated a secret combination " +
