@@ -58,6 +58,9 @@ public class User extends AbstactPlayer{
      */
     private String askForCombination() {
 
+        String message = " chiffre";
+        if(GameModel.getCombinationNum() > 1)
+            message += "s";
         String result = "";
         do {
             scanner = new Scanner(System.in);
@@ -67,11 +70,13 @@ public class User extends AbstactPlayer{
 
                 if(result.length() != GameModel.getCombinationNum() || !checkNumberString(result)){
                     result = "";
-                    PrintOutUtility.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " chiffres entre 0 et 9.", "Illegal Choice", "info");
+                    PrintOutUtility.printOutMessageAndLog("Veillez saisir " + GameModel.getCombinationNum()
+                            + message +" entre 0 et 9.", "Illegal answer when choose combination proposed", "info");
                 }
 
             } else {
-                PrintOutUtility.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " chiffres entre 0 et 9.", "Illegal Choice", "info");
+                PrintOutUtility.printOutMessageAndLog("Veillez saisir " + GameModel.getCombinationNum()
+                        + message +" entre 0 et 9.", "Illegal answer when choose combination proposed", "info");
                 result = "";
             }
         } while (result.equals(""));
@@ -97,15 +102,20 @@ public class User extends AbstactPlayer{
 
                 if(!checkSymbolString(result)){
 
-                    PrintOutUtility.printOutMessageAndLog("Veillez donner la reponse en utilisant les symbols +-=, (+) plus grand, plus petit (-) ou si c’est le bon (=).", "Illegal reponse: "+result, "info");
+                    PrintOutUtility.printOutMessageAndLog("Veillez donner la réponse en utilisant les caractères +-="
+                                    + System.lineSeparator() + "(+) plus grand, plus petit (-) ou si c’est le bon (=)",
+                            "Illegal answer when asked to compare: " + result, "info");
                     result = "";
                 }
                 else if (!compareAnswer.equals(result)){
-                    PrintOutUtility.printOutMessageAndLog("La reponse n est pas bonne. Veillez essayer encore.", "Illegal reponse: "+result, "info");
+                    PrintOutUtility.printOutMessageAndLog("La réponse n'est pas bonne. Veillez essayer encore.",
+                            "Illegal answer when asked to compare: " + result, "info");
                     result = "";
                 }
             } else {
-                PrintOutUtility.printOutMessageAndLog("Veillez donner la reponse en utilisant les symbols +-=, (+) plus grand, plus petit (-) ou si c’est le bon (=).", "Illegal reponse", "info");
+                PrintOutUtility.printOutMessageAndLog("Veillez donner la réponse en utilisant les caractères +-= "
+                        + System.lineSeparator() + "(+) plus grand, plus petit (-) ou si c’est le bon (=)",
+                        "Illegal answer when asked to compare" + result, "info");
                 result = "";
             }
         } while (result.equals(""));

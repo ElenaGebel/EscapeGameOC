@@ -133,7 +133,9 @@ public class ArtificialIntelligence extends AbstactPlayer{
     /**
      * Recherche binaire
      * Compare chaque chiffre de la combinaison avec la réponse de l'utilisateur
-     * @return CombinationElement
+     * @param element instance of CombinationElement
+     * @param pattern paramètre pour comparer la réponse de l'utilisateur et la combinaison précédente
+     * @return element instance of CombinationElement
      */
     private CombinationElement binarySearch(CombinationElement element,  String pattern) {
         if(pattern.equals("-")){

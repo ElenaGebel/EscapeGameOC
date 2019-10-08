@@ -8,22 +8,27 @@ import com.company.Utility.PrintOutUtility;
  * Classe responsable de la logique du mode Defenseur
  */
 public class Defenseur implements IStrategy {
+    /**
+     * Constructeur Defenseur
+     */
     public Defenseur() {
     }
 
     /**
      * Lance le jeu en mode Defenseur
-     * @player1 - intance of User
-     * @player2 - intance of Itelligence Artificielle
+     * @param player1 - intance of User
+     * @param player2 - intance of Itelligence Artificielle
      */
 
     @Override
     public void play(AbstactPlayer player1, AbstactPlayer player2) {
 
-        PrintOutUtility.printOutMessageAndLog("Veillez entrer votre combinaison secrète : ", "Strategy Defenseur Activated", "info");
+        PrintOutUtility.printOutMessageAndLog("Veillez saisir votre combinaison secrète : ",
+                "Strategy Defenseur Activated", "info");
 
         player1.getSecretCombination();
-        PrintOutUtility.printOutMessageAndLog("", "User entered a secret combination " + player1.getSecretCombinationToString(), "info");
+        PrintOutUtility.printOutMessageAndLog("", "User entered a secret combination "
+                + player1.getSecretCombinationToString(), "info");
 
         String result = "";
 
@@ -32,25 +37,33 @@ public class Defenseur implements IStrategy {
             player2.getCombination(true,
                     player1.compare(player1.getSecretCombination(), player2.getCombination(false, "")));
 
-            PrintOutUtility.printOutMessageAndLog("Votre combinaison secrète : " +  player1.getSecretCombinationToString() + ". Proposition de Itelligence Artificielle: " + player2.getCombinationToString(), "Itelligence Artificielle guessed a number " + player2.getCombinationToString(), "info");
-            PrintOutUtility.printOutMessageAndLog("Veillez donner la reponse en utilisant les symbols +-=, " +
-                    "(+) plus grand, plus petit (-) ou si c’est le bon (=)", "", "info");
+            PrintOutUtility.printOutMessageAndLog("Votre combinaison secrète: "
+                    +  player1.getSecretCombinationToString() + ". Proposition de l'itelligence artificielle: "
+                    + player2.getCombinationToString(), "IA guessed a number "
+                    + player2.getCombinationToString(), "info");
+            PrintOutUtility.printOutMessageAndLog("Veillez saisir la reponse en utilisant les symbols +-=, "
+                            + System.lineSeparator() + "(+) plus grand, plus petit (-) ou si c’est le bon (=)", "", "info");
 
             result = player1.compare(player1.getSecretCombination(), player2.getCombination(false, ""));
             player1.askToCompare(result);
 
             if(result != "" && result.length() > 0 && result.indexOf('+') == -1 &&  result.indexOf('-') == -1){
-                PrintOutUtility.printOutMessageAndLog("Itelligence Artificielle a gagne. Votre combinaison secrète :" + player1.getSecretCombinationToString(), "User guessed a number " + player1.getCombinationToString(), "info");
+                PrintOutUtility.printOutMessageAndLog("L'intelligence artificielle a gagné. Votre combinaison secrète: "
+                        + player1.getSecretCombinationToString(), "User guessed a number "
+                        + player1.getCombinationToString(), "info");
                 break;
             } else{
                 if (i <  GameModel.getTryNum() - 1)
-                    PrintOutUtility.printOutMessageAndLog("Proposition: "+ player2.getCombinationToString() + " -> Réponse :" + result, "Proposition: "+ player2.getCombinationToString() + " -> Réponse :" + result, "info");
+                    PrintOutUtility.printOutMessageAndLog("Proposition: "+ player2.getCombinationToString()
+                            + " -> réponse :" + result, "IA suggestion: "+ player2.getCombinationToString()
+                            + " -> answer :" + result, "info");
 
                 result = "";
             }
         }
         if(result == "")
-            PrintOutUtility.printOutMessageAndLog("Game over. Vous avez gagne. Combinaison secrète : " + player1.getSecretCombinationToString(), "Game Over", "info");
+            PrintOutUtility.printOutMessageAndLog("Game over. Vous avez gagné. Combinaison secrète: "
+                    + player1.getSecretCombinationToString(), "Game Over", "info");
 
     }
 }

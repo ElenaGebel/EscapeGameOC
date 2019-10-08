@@ -19,6 +19,9 @@ public class GameController {
     private IStrategy currentStrategyInstance;
     private Boolean replay = true;
 
+    /**
+     * Constructeur GameController
+     */
     public GameController() {
 
     }
@@ -56,13 +59,15 @@ public class GameController {
                         }
                     }
                     else{
-                        PrintOutUtility.printOutMessageAndLog("Veuillez choisir le numero entre 1 et 3", "Illegal Choice", "info");
+                        PrintOutUtility.printOutMessageAndLog("Veuillez saisir un chiffre entre 1 et 3",
+                                "Illegal answer when play again proposed", "info");
                         choiсe = 0;
                     }
                 }
                 else {
                     choiсe = 0;
-                    PrintOutUtility.printOutMessageAndLog("Veuillez choisir le numero entre 1 et 3", "Illegal Choice", "info");
+                    PrintOutUtility.printOutMessageAndLog("Veuillez saisir un chiffre entre 1 et 3",
+                            "Illegal answer when play again proposed", "info");
                 }
             } while (choiсe == 0);
         } while (replay);
@@ -71,7 +76,7 @@ public class GameController {
     /**
      * Sert à créer une nouvelle classe Strategy en fonction de mode du jeu choisi
      * 1 - Challenger, 2 - Defenseur, 3 - Duel
-     * @askForStrategyType - parametre sert pour proposer choisir le mode du jeu ou pas
+     * @param askForStrategyType - parametre sert pour proposer choisir le mode du jeu ou pas
      */
 
     private void initGame(Boolean askForStrategyType)  {
@@ -80,37 +85,35 @@ public class GameController {
             askForStrategyType();
 
         PrintOutUtility.printOutMessageAndLog("", "InitGame", "info");
-
+        String message = "Une erreur est survenue lors de l'exécution du jeu ";
         try {
             Class<?> newClass = Class.forName(GameModel.getStrategyClassPath() + GameModel.getCurrentStrategyTypeName());
             try {
                 currentStrategyInstance = (IStrategy) newClass.getDeclaredConstructor().newInstance();
             } catch (InstantiationException e) {
-                PrintOutUtility.printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
+                PrintOutUtility.printOutMessageAndLog(message + e.getMessage(),
                         "InstantiationException" + e.getMessage(), "error");
             } catch (IllegalAccessException e) {
-                PrintOutUtility.printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
+                PrintOutUtility.printOutMessageAndLog(message + e.getMessage(),
                         "IllegalAccessException" + e.getMessage(), "error");
 
             } catch (InvocationTargetException e) {
-                PrintOutUtility.printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
+                PrintOutUtility.printOutMessageAndLog(message + e.getMessage(),
                         "InvocationTargetException" + e.getMessage(), "error");
 
             } catch (NoSuchMethodException e) {
-                PrintOutUtility.printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
+                PrintOutUtility.printOutMessageAndLog(message + e.getMessage(),
                         "NoSuchMethodException" + e.getMessage(), "error");
-
             }
 
         }catch(ClassNotFoundException e){
-            PrintOutUtility.printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(),
-                            "Une erreur est survenu lors de l'exécution du jeu " + e.getMessage(), "error");
+            PrintOutUtility.printOutMessageAndLog(message + e.getMessage(),
+                            "ClassNotFoundException " + e.getMessage(), "error");
         }
         if (currentStrategyInstance != null)
             currentStrategyInstance.play(new User(), new ArtificialIntelligence());
         else
-            PrintOutUtility.printOutMessageAndLog("Une erreur est survenu lors de l'exécution du jeu",
-                    "currentStrategyInstance is null", "error");
+            PrintOutUtility.printOutMessageAndLog(message, "currentStrategyInstance is null", "error");
 
      }
 
@@ -122,7 +125,8 @@ public class GameController {
          restoreDefault();
          Scanner scanner;
          int strategyType = 0;
-         PrintOutUtility.printOutMessageAndLog("Pour commencer veillez choisir un mode de jeu: 1 - Challenger, 2 - Defenseur, 3 - Duel",
+         PrintOutUtility.printOutMessageAndLog("Pour commencer veillez choisir un mode de jeu:" +
+                         System.lineSeparator() + "1 - Challenger, 2 - Defenseur, 3 - Duel",
                  "Menu of the game proposed", "info");
          do {
              scanner = new Scanner(System.in);
@@ -131,7 +135,8 @@ public class GameController {
                  strategyType = scanner.nextInt();
 
                  if (strategyType < 1 || strategyType > 3){
-                     PrintOutUtility.printOutMessageAndLog("Veuillez choisir le numero entre 1 et 3", "Illegal Choice", "info");
+                     PrintOutUtility.printOutMessageAndLog("Veuillez saisir un chiffre entre 1 et 3",
+                             "Illegal answer when menu of the game proposed", "info");
                      strategyType = 0;
                  }
                  else{
@@ -139,13 +144,14 @@ public class GameController {
                  }
              } else {
                  strategyType = 0;
-                 PrintOutUtility.printOutMessageAndLog("Veuillez choisir le numero entre 1 et 3", "Illegal Choice", "info");
+                 PrintOutUtility.printOutMessageAndLog("Veuillez saisir un chiffre entre 1 et 3",
+                         "Illegal answer when menu of the game proposed", "info");
 
              }
          } while (strategyType == 0);
 
          PrintOutUtility.printOutMessageAndLog("Vous avez choisi le mode de jeu "+ GameModel.getCurrentStrategyTypeName(),
-                 "StrategyType: " + GameModel.getCurrentStrategyTypeName(), "info");
+                 "StrategyType choosed: " + GameModel.getCurrentStrategyTypeName(), "info");
 
      }
 

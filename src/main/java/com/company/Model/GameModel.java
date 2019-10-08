@@ -19,7 +19,9 @@ public final class GameModel {
     private static String currentStrategyTypeName;
 
     private static GameModel instance = new GameModel();
-
+    /**
+     * Constructeur GameModel
+     */
     private GameModel() {
         combinationNum=4;
         tryNum=4;

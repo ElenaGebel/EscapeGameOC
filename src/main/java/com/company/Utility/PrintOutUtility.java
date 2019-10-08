@@ -11,7 +11,9 @@ import org.apache.logging.log4j.Logger;
 
 public final class PrintOutUtility {
     public static Logger logger = LogManager.getLogger();
-
+    /**
+     * Constructeur PrintOutUtility
+     */
     private PrintOutUtility() {
 
     }

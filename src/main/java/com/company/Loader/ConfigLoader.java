@@ -6,7 +6,10 @@ import java.io.InputStream;
 import java.util.Properties;
 import com.company.Model.GameModel;
 import com.company.Utility.PrintOutUtility;
-
+/**
+ * Classe ConfigLoader est responsable pour télécharger le fichier de configuration, lire et sauvegarder
+ * les paramètres dans la classe Modéle.
+ */
 public class ConfigLoader {
 
     private String result = "";
@@ -14,9 +17,9 @@ public class ConfigLoader {
     private String configName;
     private Properties properties;
 
+
     /**
-     * Classe ConfigLoader est responsable pour télécharger le fichier de configuration et sauvegarder
-     * les paramètres dans la classe Modéle.
+     * Constructeur ConfigLoader
      */
     public ConfigLoader() {
         configName = GameModel.getConfigPath();
@@ -80,10 +83,13 @@ public class ConfigLoader {
             GameModel.setModeDeveloper(modeDeveloper);
             GameModel.setAlgorithmType(algorithmType);
 
-            PrintOutUtility.printOutMessageAndLog("", "Config loaded combinationNum=" + combinationNum + " tryNum=" + tryNum, "info");
+            PrintOutUtility.printOutMessageAndLog("", "Config loaded combinationNum=" +
+                    combinationNum + " tryNum=" + tryNum + " algorithmType=" + algorithmType  + " modeDeveloper="
+                    + modeDeveloper, "info");
 
         } catch (Exception e) {
-            PrintOutUtility.printOutMessageAndLog("Une erreur est survenue lors de l'exécution du jeu " + e.getMessage(),
+            PrintOutUtility.printOutMessageAndLog("Une erreur est survenue lors de l'exécution du jeu "
+                            + e.getMessage(),
                     "Exception" + e.getMessage(), "error");
         } finally {
             inputStream.close();
