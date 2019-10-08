@@ -25,7 +25,10 @@ public class ArtificialIntelligence extends AbstactPlayer{
     @Override
     public ArrayList<Integer> getCombination(Boolean newCombination, String pattern) {
         if(newCombination) {
-            binarySearchCombinationWithPattern(pattern);
+            if(GameModel.getAlgorithmType() == 1)
+                binarySearchCombinationWithPattern(pattern);
+            else
+                generateCombinationWithPattern(pattern);
         }
             return combinationArrayList;
     }
