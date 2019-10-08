@@ -1,12 +1,16 @@
 package com.company.Model;
 
+/**
+ * Classe Modèle représente les données de l'application
+ */
 public final class GameModel {
 
-    private static Boolean modeDevelopeur;
+    private static Boolean modeDeveloper;
     private static int tryNum;
     private static int combinationNum;
 
-
+    // 1 pour algorithme binaire et 2 pour algorithme random
+    private static int algorithmType;
 
     private static int currentStrategyType;
     private static String configPath;
@@ -14,13 +18,12 @@ public final class GameModel {
     private static String strategyClassPath;
     private static String currentStrategyTypeName;
 
-
     private static GameModel instance = new GameModel();
 
     private GameModel() {
         combinationNum=4;
         tryNum=4;
-        modeDevelopeur=false;
+        modeDeveloper=false;
         configPath = "config.properties";
         strategyTypeArray = new String[]{StrategyType.CHALLENGER, StrategyType.DEFENSEUR, StrategyType.DUEL};
         strategyClassPath = "com.company.Controller.Strategy.";
@@ -45,27 +48,36 @@ public final class GameModel {
         return configPath;
     }
 
+    public static int getAlgorithmType() {
+        return algorithmType;
+    }
+
+    public static void setAlgorithmType(int algorithmType)
+    {
+        GameModel.algorithmType = algorithmType;
+    }
+
 
     public static void setCurrentStrategyType(int currentStrategyType) {
         if( currentStrategyType >= 1 && currentStrategyType <= 3)
             GameModel.currentStrategyType = currentStrategyType;
         else
             GameModel.currentStrategyType = 1;
-        currentStrategyTypeName = strategyTypeArray[currentStrategyType-1];
+        currentStrategyTypeName = strategyTypeArray[GameModel.currentStrategyType-1];
     }
 
     public static int getCurrentStrategyType() {
         return currentStrategyType;
     }
 
-    public static Boolean isModeDevelopeur() {
+    public static Boolean isModeDeveloper() {
 
-        return modeDevelopeur;
+        return modeDeveloper;
     }
 
-    public static void setModeDevelopeur(Boolean modeDevelopeur) {
+    public static void setModeDeveloper(Boolean modeDeveloper) {
 
-        GameModel.modeDevelopeur = modeDevelopeur;
+        GameModel.modeDeveloper = modeDeveloper;
     }
 
     public static int getTryNum() {
@@ -74,8 +86,10 @@ public final class GameModel {
     }
 
     public static void setTryNum(int tryNum) {
-
-        GameModel.tryNum = tryNum;
+        if(tryNum > 0)
+            GameModel.tryNum = tryNum;
+        else
+            GameModel.tryNum = 1;
     }
 
     public static int getCombinationNum() {
@@ -85,7 +99,10 @@ public final class GameModel {
 
     public static void setCombinationNum(int combinationNum) {
 
-        GameModel.combinationNum = combinationNum;
+        if(combinationNum > 0)
+            GameModel.combinationNum = combinationNum;
+        else
+            GameModel.combinationNum = 1;
     }
 
 }

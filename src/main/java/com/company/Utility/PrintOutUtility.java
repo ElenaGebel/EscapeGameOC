@@ -4,8 +4,13 @@ import com.company.Model.GameModel;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+/**
+ * Classe PrintOutUtility sert pour enregistrer le log et
+ * pour afficher le texte dans la console.
+ */
+
 public final class PrintOutUtility {
-    public static Logger logger = LogManager.getLogger();;
+    public static Logger logger = LogManager.getLogger();
 
     private PrintOutUtility() {
 
@@ -16,7 +21,7 @@ public final class PrintOutUtility {
         if(outMessage != "")
             System.out.println(outMessage);
 
-        if((GameModel.isModeDevelopeur() || logType != "debug") && logMessage != ""){
+        if((GameModel.isModeDeveloper() || logType != "debug") && logMessage != ""){
             switch (logType) {
                 case "debug":
                     logger.debug(logMessage);

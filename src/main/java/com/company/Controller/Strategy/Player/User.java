@@ -5,11 +5,27 @@ import java.util.Scanner;
 import com.company.Model.GameModel;
 import com.company.Utility.PrintOutUtility;
 
+/**
+ * Classe User classe de l'utilisateur
+ */
+
 public class User extends AbstactPlayer{
     private Scanner scanner;
+
+    /**
+     * Constructeur User
+     */
+    public User() {
+    }
+    /**
+     * Retourne la combinaison
+     * @param generateNewCombination sert pour demander à l'utilisateur à saisir la combinaison encore une fois
+     * @param pattern
+     * @return la combinaison
+     */
     @Override
-    public ArrayList<Integer> getCombination(Boolean generateNewCombitation, String pattern) {
-        if(generateNewCombitation){
+    public ArrayList<Integer> getCombination(Boolean generateNewCombination, String pattern) {
+        if(generateNewCombination){
             combinationArrayList = new ArrayList<>();
             String userCombination = askForCombination();
 
@@ -19,7 +35,10 @@ public class User extends AbstactPlayer{
         }
         return combinationArrayList;
     }
-
+    /**
+     * Retourne la combinaison secrète
+     * @return la combinaison secrète
+     */
     @Override
     public ArrayList<Integer> getSecretCombination() {
         if(secretCombinationArrayList.size() == 0){
@@ -33,6 +52,10 @@ public class User extends AbstactPlayer{
         return secretCombinationArrayList;
     }
 
+    /**
+     * Demande à l'utilisateur à saisir la combinaison
+     * @return la combinaison saisi
+     */
     private String askForCombination() {
 
         String result = "";
@@ -44,11 +67,11 @@ public class User extends AbstactPlayer{
 
                 if(result.length() != GameModel.getCombinationNum() || !checkNumberString(result)){
                     result = "";
-                    PrintOutUtility.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " numeros entre 0 et 9.", "Illegal Choice", "info");
+                    PrintOutUtility.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " chiffres entre 0 et 9.", "Illegal Choice", "info");
                 }
 
             } else {
-                PrintOutUtility.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " numeros entre 0 et 9.", "Illegal Choice", "info");
+                PrintOutUtility.printOutMessageAndLog("Veillez choisir " + GameModel.getCombinationNum() + " chiffres entre 0 et 9.", "Illegal Choice", "info");
                 result = "";
             }
         } while (result.equals(""));
@@ -56,6 +79,12 @@ public class User extends AbstactPlayer{
         return result;
     }
 
+    /**
+     * Demande à l'utilisateur comparer la proposition de l’ordinateur
+     * et la combinaison secrète
+     * @param compareAnswer paramètre pour comparer la réponse de l'utilisateur et la combinaison secrète
+     * @return reponse de l'utilisateur
+     */
     @Override
     public String askToCompare(String compareAnswer)  {
 

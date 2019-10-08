@@ -1,6 +1,6 @@
 package com.company.Model;
 /**
- * Differents strategy types
+ * Une liste des modes du jeu
  */
 public class StrategyType {
     public static final String CHALLENGER = "Challenger";

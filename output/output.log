@@ -461,3 +461,51 @@
 03-10-2019 11:14:59.276 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 2266
 03-10-2019 11:15:16.162 [main] INFO  com.company.Utility.PrintOutUtility - Game Over
 03-10-2019 11:15:16.162 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
+04-10-2019 11:10:06.482 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4
+04-10-2019 11:10:06.482 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+04-10-2019 11:10:11.545 [main] INFO  com.company.Utility.PrintOutUtility - StrategyType: Defenseur
+04-10-2019 11:10:11.545 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+04-10-2019 11:10:11.545 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Defenseur Activated
+04-10-2019 11:10:18.449 [main] INFO  com.company.Utility.PrintOutUtility - User entered a secret combination 1234
+04-10-2019 11:10:18.452 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 4444
+04-10-2019 11:10:50.610 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 4444 -> Réponse :---=
+04-10-2019 11:10:50.610 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 1114
+04-10-2019 11:11:19.087 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 1114 -> Réponse :=++=
+04-10-2019 11:11:19.087 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 1224
+04-10-2019 11:12:33.865 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 1224 -> Réponse :==+=
+04-10-2019 11:12:33.865 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 1234
+04-10-2019 11:12:44.903 [main] INFO  com.company.Utility.PrintOutUtility - Illegal reponse: ==+
+04-10-2019 11:12:48.184 [main] INFO  com.company.Utility.PrintOutUtility - User guessed a number 
+04-10-2019 11:12:48.184 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
+04-10-2019 11:13:26.724 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+04-10-2019 11:13:26.724 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Defenseur Activated
+04-10-2019 11:13:41.327 [main] INFO  com.company.Utility.PrintOutUtility - User entered a secret combination 0918
+04-10-2019 11:13:41.327 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 4444
+04-10-2019 11:14:08.521 [main] INFO  com.company.Utility.PrintOutUtility - Illegal reponse: -++-
+04-10-2019 11:14:33.334 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 4444 -> Réponse :-+-+
+04-10-2019 11:14:33.341 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 1717
+04-10-2019 11:16:47.445 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 1717 -> Réponse :-+=+
+04-10-2019 11:16:47.445 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 0818
+04-10-2019 11:18:16.123 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 0818 -> Réponse :=+==
+04-10-2019 11:18:16.123 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 0918
+04-10-2019 11:18:23.402 [main] INFO  com.company.Utility.PrintOutUtility - User guessed a number 
+04-10-2019 11:18:23.402 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
+04-10-2019 11:19:38.963 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+04-10-2019 11:19:38.979 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Defenseur Activated
+04-10-2019 11:19:50.223 [main] INFO  com.company.Utility.PrintOutUtility - User entered a secret combination 5670
+04-10-2019 11:19:50.223 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 4444
+04-10-2019 11:20:25.386 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 4444 -> Réponse :+++-
+04-10-2019 11:20:25.386 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 7771
+04-10-2019 11:21:00.680 [main] INFO  com.company.Utility.PrintOutUtility - Illegal reponse: --=+
+04-10-2019 11:21:15.136 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 7771 -> Réponse :--=-
+04-10-2019 11:21:15.137 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 5570
+04-10-2019 11:21:35.252 [main] INFO  com.company.Utility.PrintOutUtility - Illegal reponse: =-==
+04-10-2019 11:21:44.951 [main] INFO  com.company.Utility.PrintOutUtility - Proposition: 5570 -> Réponse :=+==
+04-10-2019 11:21:44.951 [main] INFO  com.company.Utility.PrintOutUtility - Itelligence Artificielle guessed a number 5670
+04-10-2019 11:21:55.414 [main] INFO  com.company.Utility.PrintOutUtility - Illegal reponse: ++++
+04-10-2019 11:21:59.417 [main] INFO  com.company.Utility.PrintOutUtility - User guessed a number 
+04-10-2019 11:21:59.417 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
+08-10-2019 13:23:59.711 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4
+08-10-2019 13:23:59.726 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+08-10-2019 13:26:00.546 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=-5 tryNum=4
+08-10-2019 13:26:00.562 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed

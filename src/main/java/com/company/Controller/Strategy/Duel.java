@@ -4,14 +4,14 @@ import com.company.Controller.Strategy.Player.AbstactPlayer;
 import com.company.Model.GameModel;
 import com.company.Utility.PrintOutUtility;
 /**
- * Class responsable de la logique du mode Duel
+ * Classe responsable de la logique du mode Duel
  */
 public class Duel implements IStrategy {
     public Duel() {
     }
 
     /**
-     * commence le jeu en mode Duel
+     * Lance le jeu en mode Duel
      * @player1 - intance of User
      * @player2 - intance of Itelligence Artificielle
      */
@@ -31,7 +31,7 @@ public class Duel implements IStrategy {
         player2.getSecretCombination();
 
         String message = "Itelligence Artificielle a choisi sa combinaison secrète";
-        if(GameModel.isModeDevelopeur())
+        if(GameModel.isModeDeveloper())
             message +=  ": " + player2.getSecretCombinationToString() + "(visible en mode developpeur)";
 
         PrintOutUtility.printOutMessageAndLog(message ,

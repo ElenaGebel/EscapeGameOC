@@ -5,7 +5,7 @@ import com.company.Controller.Strategy.Player.AbstactPlayer;
 public interface IStrategy {
 
     /**
-     * Lance le jeux
+     * Lance un mode de jeu
      */
     void play(AbstactPlayer player1, AbstactPlayer player2);
 }

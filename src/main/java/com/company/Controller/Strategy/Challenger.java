@@ -4,7 +4,7 @@ import com.company.Controller.Strategy.Player.AbstactPlayer;
 import com.company.Utility.PrintOutUtility;
 import com.company.Model.GameModel;
 /**
- * Class responsable de la logique du mode Challenger
+ * Classe responsable de la logique du mode Challenger
  */
 public class Challenger implements IStrategy{
 
@@ -12,7 +12,7 @@ public class Challenger implements IStrategy{
     public Challenger() {
     }
     /**
-     * commence le jeu en mode Challenger
+     * Lance le jeu en mode Challenger
      * @player1 - intance of User
      * @player2 - intance of Itelligence Artificielle
      */
@@ -23,7 +23,7 @@ public class Challenger implements IStrategy{
         player2.getSecretCombination();
 
         String message = "Itelligence Artificielle a choisi sa combinaison secrète";
-        if(GameModel.isModeDevelopeur())
+        if(GameModel.isModeDeveloper())
             message +=  ": " + player2.getSecretCombinationToString() + "(visible en mode developpeur).";
         else
             message += ". ";

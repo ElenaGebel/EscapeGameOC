@@ -10,7 +10,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.Scanner;
 
 /**
- * Class responsable de la logique du jeu
+ * Classe responsable de la logique du jeu
  */
 
 public class GameController {
@@ -69,7 +69,7 @@ public class GameController {
     }
 
     /**
-     * Сrée Strategy Class en fonction de mode du jeu choisi
+     * Sert à créer une nouvelle classe Strategy en fonction de mode du jeu choisi
      * 1 - Challenger, 2 - Defenseur, 3 - Duel
      * @askForStrategyType - parametre sert pour proposer choisir le mode du jeu ou pas
      */
@@ -82,7 +82,7 @@ public class GameController {
         PrintOutUtility.printOutMessageAndLog("", "InitGame", "info");
 
         try {
-            Class<?> newClass = Class.forName(String.format(GameModel.getStrategyClassPath() + GameModel.getCurrentStrategyTypeName()));
+            Class<?> newClass = Class.forName(GameModel.getStrategyClassPath() + GameModel.getCurrentStrategyTypeName());
             try {
                 currentStrategyInstance = (IStrategy) newClass.getDeclaredConstructor().newInstance();
             } catch (InstantiationException e) {
@@ -115,7 +115,7 @@ public class GameController {
      }
 
     /**
-     * Propose de choisir le mode du jeu
+     * Propose de choisir un mode du jeu
      * 1 - Challenger, 2 - Defenseur, 3 - Duel
      */
      private void askForStrategyType(){
@@ -150,7 +150,7 @@ public class GameController {
      }
 
     /**
-     * Sets les parametres to zero
+     * Sets les paramètres to zéro
      */
      private void restoreDefault() {
         currentStrategyInstance = null;

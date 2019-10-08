@@ -2,7 +2,7 @@ package com.company.Controller.Strategy.Player;
 
 import java.util.ArrayList;
 /**
- * Class Abstact class mere pour User et ArtificialIntelligence
+ * Classe Abstact classe mère pour User et ArtificialIntelligence
  */
 public abstract class AbstactPlayer {
 
@@ -12,14 +12,30 @@ public abstract class AbstactPlayer {
     public AbstactPlayer() {
     }
 
+    /**
+     * Retourne la combinaison
+     * @param generateNewCombitation paramètre pour savoir si il faut retourner une nouvelle combinaison
+     * @param pattern paramètre pour comparer la réponse de l'utilisateur et la combinaison précédente
+     * @return la combinaison
+     */
     public ArrayList<Integer> getCombination(Boolean generateNewCombitation, String pattern){
         return combinationArrayList;
     }
 
+    /**
+     * Retourne la combinaison secrète
+     * @return la combinaison secrète
+     */
     public ArrayList<Integer>  getSecretCombination(){
         return secretCombinationArrayList;
     }
 
+    /**
+     * Compare 2 tableau
+     * @param arrayList1
+     * @param arrayList2
+     * @return result
+     */
     public String compare(ArrayList<Integer> arrayList1, ArrayList<Integer> arrayList2) {
         String result = "";
 
@@ -36,24 +52,47 @@ public abstract class AbstactPlayer {
         return result;
     }
 
+    /**
+     * Demande à comparer la proposition de l’ordinateur et la combinaison secrète
+     * @param compareAnswer paramètre pour comparer la réponse de l'utilisateur et la combinaison secrète
+     * @return reponse
+     */
+
     public String askToCompare(String compareAnswer)  {
         return compareAnswer;
     }
 
+    /**
+     * Sert à convertir un tableau de chiffres de la combinaison a une chaîne de caractères
+     * @return une chaîne de caractères
+     */
     public String getCombinationToString(){
         return combinationArrayList.toString().replaceAll("\\[|\\]|[,][ ]","");
     }
 
+    /**
+     * Sert à convertir un tableau de chiffres de la combinaison secrète a une chaîne de caractères
+     * @return une chaîne de caractères
+     */
     public String getSecretCombinationToString(){
         return secretCombinationArrayList.toString().replaceAll("\\[|\\]|[,][ ]","");
     }
 
-
+    /**
+     * Vérifie si une chaîne de caractères contient que les chiffres
+     * @param string une chaîne de caractères
+     * @return result boolean
+     */
     protected boolean checkNumberString(String string) {
         if (string == null) return false;
-        return string.matches("^-?\\d+$");
+        return string.matches("^\\d+$");
     }
 
+    /**
+     * Vérifie si une chaîne de caractères contient que les caractères "+", "=", "-"
+     * @param string une chaîne de caractères
+     * @return result boolean
+     */
     protected boolean checkSymbolString(String string) {
         if (string == null) return false;
         return string.matches("^[-+=]+$");
