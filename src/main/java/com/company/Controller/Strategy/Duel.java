@@ -30,9 +30,9 @@ public class Duel implements IStrategy {
 
         player2.getSecretCombination();
 
-        String message = "Itelligence Artificielle a choisi sa combinaison secrète";
+        String message = "Intelligence Artificielle a choisi sa combinaison secrète";
         if(GameModel.isModeDeveloper())
-            message +=  ": " + player2.getSecretCombinationToString() + "(visible en mode developpeur)";
+            message +=  ": " + player2.getSecretCombinationToString() + " (visible en mode développeur)";
 
         PrintOutUtility.printOutMessageAndLog(message ,
                 "IA generated a secret combination " +
@@ -55,7 +55,7 @@ public class Duel implements IStrategy {
             resultPlayer2 = player2.compare(player2.getCombination(false, ""), player1.getSecretCombination());
 
             if(!resultPlayer1.equals("")  && resultPlayer1.length() > 0 && resultPlayer1.indexOf('+') == -1 &&  resultPlayer1.indexOf('-') == -1){
-                PrintOutUtility.printOutMessageAndLog("Felicitations! Vous avez trouve la combinaison secrete: " + player1.getCombinationToString(),
+                PrintOutUtility.printOutMessageAndLog("Félicitations! Vous avez trouvé la combinaison secrète: " + player1.getCombinationToString(),
                         "User winned " + player1.getCombinationToString(), "info");
                 break;
             }else{
@@ -67,7 +67,7 @@ public class Duel implements IStrategy {
             }
 
             if(!resultPlayer2.equals("") && resultPlayer2.length() > 0 && resultPlayer2.indexOf('+') == -1 &&  resultPlayer2.indexOf('-') == -1){
-                PrintOutUtility.printOutMessageAndLog("Itelligence Artificielle a gagne. Votre combinaison secrète: " +
+                PrintOutUtility.printOutMessageAndLog("Intelligence Artificielle a gagné. Votre combinaison secrète: " +
                         player1.getSecretCombinationToString(), "IA winned " +
                         player2.getCombinationToString(), "info");
                 break;
@@ -81,13 +81,13 @@ public class Duel implements IStrategy {
         PrintOutUtility.printOutMessageAndLog("*******Game over*******", "Game over", "info");
 
         if(resultPlayer1.equals(""))
-            PrintOutUtility.printOutMessageAndLog("Vous n'avez pas trouve la combinaison secrète de l'Itelligence Artificielle: " +
-                    player2.getSecretCombinationToString(), "User n'a pas trouve la combinaison secret: "+
+            PrintOutUtility.printOutMessageAndLog("Vous n'avez pas trouvé la combinaison secrète de l'Intelligence Artificielle: " +
+                    player2.getSecretCombinationToString(), "User has not trouved the secret combination: "+
                     player2.getSecretCombinationToString(), "info");
 
         if(resultPlayer2.equals(""))
-            PrintOutUtility.printOutMessageAndLog("L'itelligence artificielle n'a pas trouve votre combinaison secrète.: " +
-                    player1.getSecretCombinationToString(), "IA n'a pas trouve la combinaison secret: "+
+            PrintOutUtility.printOutMessageAndLog("L'intelligence artificielle n'a pas trouvé votre combinaison secrète: " +
+                    player1.getSecretCombinationToString(), "IA has not trouved the secret combination: "+
                     player1.getSecretCombinationToString(), "info");
     }
 }
