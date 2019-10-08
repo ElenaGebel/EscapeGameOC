@@ -18,3 +18,28 @@
 08-10-2019 23:29:51.031 [main] INFO  com.company.Utility.PrintOutUtility - IA guessed a number 7655
 08-10-2019 23:30:03.762 [main] INFO  com.company.Utility.PrintOutUtility - User guessed a number 
 08-10-2019 23:30:03.762 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
+09-10-2019 00:28:44.468 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+09-10-2019 00:28:44.483 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+09-10-2019 00:28:49.605 [main] INFO  com.company.Utility.PrintOutUtility - StrategyType choosed: Challenger
+09-10-2019 00:28:49.605 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+09-10-2019 00:28:49.605 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Challenger Activated
+09-10-2019 00:28:49.605 [main] INFO  com.company.Utility.PrintOutUtility - IA generated a number 5195
+09-10-2019 00:29:06.444 [main] INFO  com.company.Utility.PrintOutUtility - Illegal answer when choose combination proposed
+09-10-2019 00:29:10.430 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 1233 -> answer: +-++
+09-10-2019 00:29:17.371 [main] INFO  com.company.Utility.PrintOutUtility - Illegal answer when choose combination proposed
+09-10-2019 00:29:20.812 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 2345 -> answer: +-+=
+09-10-2019 00:29:23.342 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 2456 -> answer: +-+-
+09-10-2019 00:29:29.772 [main] INFO  com.company.Utility.PrintOutUtility - User winned. User guessed a number 5195
+09-10-2019 00:29:29.772 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
+09-10-2019 00:32:37.510 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+09-10-2019 00:32:37.510 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+09-10-2019 00:32:46.837 [main] INFO  com.company.Utility.PrintOutUtility - StrategyType choosed: Challenger
+09-10-2019 00:32:46.837 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+09-10-2019 00:32:46.837 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Challenger Activated
+09-10-2019 00:32:46.837 [main] INFO  com.company.Utility.PrintOutUtility - IA generated a number 9294
+09-10-2019 00:32:59.375 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 1234 -> answer: +=+=
+09-10-2019 00:33:02.543 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 1234 -> answer: +=+=
+09-10-2019 00:33:04.598 [main] INFO  com.company.Utility.PrintOutUtility - Illegal answer when choose combination proposed
+09-10-2019 00:33:06.889 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 5678 -> answer: +-+-
+09-10-2019 00:33:12.900 [main] INFO  com.company.Utility.PrintOutUtility - Game Over. IA winned.
+09-10-2019 00:33:12.900 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
