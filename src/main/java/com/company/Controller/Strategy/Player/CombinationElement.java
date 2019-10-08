@@ -2,9 +2,9 @@ package com.company.Controller.Strategy.Player;
 
 public class CombinationElement {
 
-    int min;
-    int max;
-    int proposition;
+    private int min;
+    private int max;
+    private int proposition;
 
     public CombinationElement(int min, int max) {
         this.min = min;

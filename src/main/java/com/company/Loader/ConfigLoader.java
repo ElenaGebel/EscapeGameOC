@@ -92,6 +92,7 @@ public class ConfigLoader {
                             + e.getMessage(),
                     "Exception" + e.getMessage(), "error");
         } finally {
+
             inputStream.close();
         }
     }

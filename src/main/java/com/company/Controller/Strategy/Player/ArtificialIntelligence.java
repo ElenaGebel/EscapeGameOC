@@ -8,7 +8,7 @@ import com.company.Model.GameModel;
  */
 public class ArtificialIntelligence extends AbstactPlayer{
 
-    protected ArrayList<CombinationElement> arrayForBinarySearch= new ArrayList<>();
+    private ArrayList<CombinationElement> arrayForBinarySearch= new ArrayList<>();
 
     /**
      * Constructeur ArtificialIntelligence
@@ -62,7 +62,7 @@ public class ArtificialIntelligence extends AbstactPlayer{
                 if(arrayForBinarySearch.get(i) != null){
                     element = binarySearch(arrayForBinarySearch.get(i), Character.toString(patternArray[i]));
                     arrayForBinarySearch.set(i, element);
-                    combinationArrayList.set(i, element.proposition);
+                    combinationArrayList.set(i, element.getProposition() );
                 }
             }
         } else{
@@ -113,7 +113,7 @@ public class ArtificialIntelligence extends AbstactPlayer{
         for (int i = 0; i < GameModel.getCombinationNum(); i++){
             element = new CombinationElement(min, max);
             arrayForBinarySearch.add(new CombinationElement(min, max));
-            arrayList.add(element.proposition);
+            arrayList.add(element.getProposition() );
         }
         return arrayList;
     }
@@ -139,17 +139,17 @@ public class ArtificialIntelligence extends AbstactPlayer{
      */
     private CombinationElement binarySearch(CombinationElement element,  String pattern) {
         if(pattern.equals("-")){
-            if(element.proposition > element.getMin())
-                element.setMax(element.proposition - 1);
+            if(element.getProposition()  > element.getMin())
+                element.setMax(element.getProposition()  - 1);
             else
-                element.setMax(element.proposition);
+                element.setMax(element.getProposition() );
         }
 
         if(pattern.equals("+")){
-            if(element.proposition < element.getMax())
-                element.setMin(element.proposition + 1);
+            if(element.getProposition() < element.getMax())
+                element.setMin(element.getProposition()  + 1);
             else
-                element.setMin(element.proposition);
+                element.setMin(element.getProposition() );
         }
         element.countProposition();
         return element;

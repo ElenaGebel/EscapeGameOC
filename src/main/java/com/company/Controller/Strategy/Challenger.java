@@ -40,8 +40,8 @@ public class Challenger implements IStrategy{
 
             result = player2.compare(player2.getSecretCombination(), player1.getCombination(true, ""));
 
-            if(result != "" && result.length() > 0 && result.indexOf('+') == -1 &&  result.indexOf('-') == -1){
-                PrintOutUtility.printOutMessageAndLog("Félicitations! Vous avez trouvé combinaison: "
+            if(!result.equals("") && result.length() > 0 && result.indexOf('+') == -1 &&  result.indexOf('-') == -1){
+                PrintOutUtility.printOutMessageAndLog("Félicitations! Vous avez trouvé la combinaison secrète : "
                         + player1.getCombinationToString(), "User winned. User guessed a number "
                         + player1.getCombinationToString(), "info");
                 break;
@@ -54,7 +54,7 @@ public class Challenger implements IStrategy{
                 result = "";
             }
         }
-        if(result == "")
+        if(result.equals(""))
             PrintOutUtility.printOutMessageAndLog("Game over. L’intelligence artificielle a gagné. " +
                     "Combinaison secrète: " + player2.getSecretCombinationToString(), "Game Over. IA winned.", "info");
 

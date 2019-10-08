@@ -10,7 +10,7 @@ import org.apache.logging.log4j.Logger;
  */
 
 public final class PrintOutUtility {
-    public static Logger logger = LogManager.getLogger();
+    private static Logger logger = LogManager.getLogger();
     /**
      * Constructeur PrintOutUtility
      */
@@ -20,10 +20,10 @@ public final class PrintOutUtility {
 
     public static void printOutMessageAndLog(String outMessage,String logMessage, String logType){
 
-        if(outMessage != "")
+        if(!outMessage.equals(""))
             System.out.println(outMessage);
 
-        if((GameModel.isModeDeveloper() || logType != "debug") && logMessage != ""){
+        if((GameModel.isModeDeveloper() || !logType.equals("debug")) && !logMessage.equals("")){
             switch (logType) {
                 case "debug":
                     logger.debug(logMessage);

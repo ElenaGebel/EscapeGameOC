@@ -15,7 +15,6 @@ import java.util.Scanner;
 
 public class GameController {
 
-    private Scanner scanner;
     private IStrategy currentStrategyInstance;
     private Boolean replay = true;
 
@@ -34,19 +33,19 @@ public class GameController {
         initGame(true);
 
         Scanner scanner;
-        int choiсe;
+        int choice;
         do {
             PrintOutUtility.printOutMessageAndLog("Veillez choisir: 1 - rejouer au même mode, " +
                             "2 - lancer un autre mode, 3 - quitter l'application",
                     "Play again proposed", "info");
-            choiсe = 0;
+            choice = 0;
             do {
                 scanner = new Scanner(System.in);
                 if (scanner.hasNextInt()) {
-                    choiсe = scanner.nextInt();
+                    choice = scanner.nextInt();
 
-                    if (choiсe >= 1 && choiсe <= 3){
-                        switch (choiсe) {
+                    if (choice >= 1 && choice <= 3){
+                        switch (choice) {
                             case 1:
                                 initGame(false);
                                 break;
@@ -61,15 +60,15 @@ public class GameController {
                     else{
                         PrintOutUtility.printOutMessageAndLog("Veuillez saisir un chiffre entre 1 et 3",
                                 "Illegal answer when play again proposed", "info");
-                        choiсe = 0;
+                        choice = 0;
                     }
                 }
                 else {
-                    choiсe = 0;
+                    choice = 0;
                     PrintOutUtility.printOutMessageAndLog("Veuillez saisir un chiffre entre 1 et 3",
                             "Illegal answer when play again proposed", "info");
                 }
-            } while (choiсe == 0);
+            } while (choice == 0);
         } while (replay);
     }
 

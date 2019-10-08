@@ -58,9 +58,9 @@ public class Defenseur implements IStrategy {
 
             player1.askToCompare(result);
 
-            if(result != "" && result.length() > 0 && result.indexOf('+') == -1 &&  result.indexOf('-') == -1){
+            if(!result.equals("") && result.length() > 0 && result.indexOf('+') == -1 &&  result.indexOf('-') == -1){
                 PrintOutUtility.printOutMessageAndLog("L'intelligence artificielle a gagné. Votre combinaison secrète: "
-                        + player1.getSecretCombinationToString(), "User guessed a number "
+                        + player1.getSecretCombinationToString(), "IA winned. User guessed a number "
                         + player1.getCombinationToString(), "info");
                 break;
             } else{
@@ -72,9 +72,9 @@ public class Defenseur implements IStrategy {
                 result = "";
             }
         }
-        if(result == "")
-            PrintOutUtility.printOutMessageAndLog("Game over. Vous avez gagné. Combinaison secrète: "
-                    + player1.getSecretCombinationToString(), "Game Over", "info");
+        if(result.equals(""))
+            PrintOutUtility.printOutMessageAndLog("Game over. Vous avez gagné. La combinaison secrète: "
+                    + player1.getSecretCombinationToString(), "User winned. Game Over", "info");
 
     }
 }
