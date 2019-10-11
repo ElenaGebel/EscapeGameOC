@@ -16,7 +16,7 @@ Mode Défenseur : l’ordinateur essaye de trouver la combinaison secrète de l�
 Mode Duel : L’utilisateur et l’ordinateur jouent tour à tour. Le premier à trouver la combinaison secrète de l'autre a gagné.
 
 ## Réalisé avec
-JDK 13(https://jdk.java.net/13/) 
+* JDK 13(https://jdk.java.net/13/) 
 * IntelliJ IDEA environnement de développement intégré (https://www.jetbrains.com/idea/) 
 * Maven un outil de gestion et d'automatisation de production des projets
 (https://maven.apache.org/) 
@@ -25,8 +25,11 @@ JDK 13(https://jdk.java.net/13/)
 ## Le code source de l’application
 https://github.com/ElenaGebel/EscapeGameOC.git
 
-## Fichier de configuration:
+## Fichier de configuration
 EscapeGameOC/src/main/resources/config.properties
+
+## Journalisation
+EscapeGameOC/output/output.log
 
 ## JavaDoc
 https://elenagebel.github.io/EscapeGameOC/JavaDoc/
