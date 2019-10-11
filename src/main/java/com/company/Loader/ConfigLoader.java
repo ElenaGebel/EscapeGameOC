@@ -7,8 +7,8 @@ import java.util.Properties;
 import com.company.Model.GameModel;
 import com.company.Utility.PrintOutUtility;
 /**
- * Classe ConfigLoader est responsable pour télécharger le fichier de configuration, lire et sauvegarder
- * les paramètres dans la classe Modéle.
+ * Classe ConfigLoader est responsable pour telecharger le fichier de configuration, lire et sauvegarder
+ * les parametres dans la classe Modele.
  */
 public class ConfigLoader {
 
@@ -26,8 +26,9 @@ public class ConfigLoader {
     }
 
     /**
-     *  Télécharge le fichier de configuration et sauvegarde
-     *  les paramètres dans la classe Modéle.
+     *  Telecharge le fichier de configuration et sauvegarde
+     *  les parametres dans la classe Modele.
+     *  @throws FileNotFoundException si le fishier n est pas trouve
      */
     public void load() throws IOException {
 

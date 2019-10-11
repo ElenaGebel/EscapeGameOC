@@ -5,8 +5,8 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 /**
- * Classe PrintOutUtility sert pour enregistrer le log et
- * pour afficher le texte dans la console.
+ * Classe PrintOutUtility Enregistre le log et
+ * affiche le texte dans la console.
  */
 
 public final class PrintOutUtility {
@@ -18,6 +18,13 @@ public final class PrintOutUtility {
 
     }
 
+    /**
+     * Classe PrintOutUtility Enregistre le log et
+     * affiche le texte dans la console.
+     * @param outMessage message a afficher dans la console
+     * @param logMessage message pour enregistrer dans le log
+     * @param logType type de log: debug, error ou info
+     */
     public static void printOutMessageAndLog(String outMessage,String logMessage, String logType){
 
         if(!outMessage.equals(""))

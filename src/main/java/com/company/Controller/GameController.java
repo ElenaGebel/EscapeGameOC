@@ -26,8 +26,8 @@ public class GameController {
     }
 
     /**
-     * Init le jeu pour la premier fois
-     * Demande rejouer le jeu
+     * Init le jeu pour la premier fois.
+     * Propose rejouer le jeu.
      */
     public void initGames(){
         initGame(true);
@@ -73,7 +73,7 @@ public class GameController {
     }
 
     /**
-     * Sert à créer une nouvelle classe Strategy en fonction de mode du jeu choisi
+     * Sert a creer une nouvelle classe Strategy en fonction de mode du jeu choisi
      * 1 - Challenger, 2 - Defenseur, 3 - Duel
      * @param askForStrategyType - parametre sert pour proposer choisir le mode du jeu ou pas
      */
@@ -155,7 +155,7 @@ public class GameController {
      }
 
     /**
-     * Sets les paramètres to zéro
+     * Set les parametres a zero
      */
      private void restoreDefault() {
         currentStrategyInstance = null;

@@ -1,7 +1,7 @@
 package com.company.Model;
 
 /**
- * Classe Modèle représente les données de l'application
+ * Classe Modele represente les donnees de l'application
  */
 public final class GameModel {
 

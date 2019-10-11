@@ -4,7 +4,7 @@ import java.util.Random;
 
 import com.company.Model.GameModel;
 /**
- * Classe ArtificialIntelligence classe de l’ordinateur
+ * Classe ArtificialIntelligence classe de l ordinateur
  */
 public class ArtificialIntelligence extends AbstactPlayer{
 
@@ -18,8 +18,8 @@ public class ArtificialIntelligence extends AbstactPlayer{
 
     /**
      * Retourne la combinaison
-     * @param newCombination paramètre pour savoir si il faut retourner une nouvelle combinaison
-     * @param pattern paramètre pour comparer la réponse de l'utilisateur et la combinaison précédente
+     * @param newCombination parametre pour savoir si il faut retourner une nouvelle combinaison
+     * @param pattern parametre pour comparer la reponse de l utilisateur et la combinaison precedente
      * @return la combinaison
      */
     @Override
@@ -33,8 +33,8 @@ public class ArtificialIntelligence extends AbstactPlayer{
             return combinationArrayList;
     }
     /**
-     * Retourne la combinaison secrète
-     * @return la combinaison secrète
+     * Retourne la combinaison secrete
+     * @return la combinaison secrete
      */
     @Override
     public ArrayList<Integer> getSecretCombination() {
@@ -45,7 +45,7 @@ public class ArtificialIntelligence extends AbstactPlayer{
     }
     /**
      * Recherche binaire
-     * @param pattern paramètre pour comparer la réponse de l'utilisateur et la combinaison précédente
+     * @param pattern parametre pour comparer la reponse de l utilisateur et la combinaison precedente
      */
     private void binarySearchCombinationWithPattern(String pattern) {
 
@@ -73,7 +73,7 @@ public class ArtificialIntelligence extends AbstactPlayer{
 
     /**
      * Recherche Random
-     * @param pattern paramètre pour comparer la réponse de l'utilisateur et la combinaison précédente
+     * @param pattern parametre pour comparer la reponse de l'utilisateur et la combinaison precedente
      */
     private void generateCombinationWithPattern(String pattern) {
 
@@ -119,7 +119,7 @@ public class ArtificialIntelligence extends AbstactPlayer{
     }
 
     /**
-     * Remplir un tableau avec la méthode Random
+     * Remplir un tableau avec la methode Random
      * @return arrayList tableau de chiffres
      */
 
@@ -132,9 +132,9 @@ public class ArtificialIntelligence extends AbstactPlayer{
 
     /**
      * Recherche binaire
-     * Compare chaque chiffre de la combinaison avec la réponse de l'utilisateur
+     * Compare chaque chiffre de la combinaison avec la reponse de l utilisateur
      * @param element instance of CombinationElement
-     * @param pattern paramètre pour comparer la réponse de l'utilisateur et la combinaison précédente
+     * @param pattern parametre pour comparer la reponse de l utilisateur et la combinaison precedente
      * @return element instance of CombinationElement
      */
     private CombinationElement binarySearch(CombinationElement element,  String pattern) {

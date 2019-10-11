@@ -6,13 +6,13 @@ import com.company.Utility.PrintOutUtility;
 import java.io.IOException;
 
 /**
- * Classe Main le point d'entrée du programme.
+ * Classe Main le point d entree de l application.
  */
 public class Main {
 
     /**
-     * la première fonction exécutée lors du lancement du programme
-     * Ici on crée une nouvelle instance de ConfigLoader et de GameController
+     * la premiere fonction executee lors du lancement de l application.
+     * Ici on cree une nouvelle instance de ConfigLoader et de GameController
      * et on lance le jeu
      */
      public static void main(String[] args){

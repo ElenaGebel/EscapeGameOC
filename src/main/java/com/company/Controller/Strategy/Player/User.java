@@ -6,7 +6,7 @@ import com.company.Model.GameModel;
 import com.company.Utility.PrintOutUtility;
 
 /**
- * Classe User classe de l'utilisateur
+ * Classe User classe de l utilisateur
  */
 
 public class User extends AbstactPlayer{
@@ -19,7 +19,7 @@ public class User extends AbstactPlayer{
     }
     /**
      * Retourne la combinaison
-     * @param generateNewCombination sert pour demander à l'utilisateur à saisir la combinaison encore une fois
+     * @param generateNewCombination sert pour demander a l utilisateur a saisir la combinaison encore une fois
      * @param pattern
      * @return la combinaison
      */
@@ -36,8 +36,8 @@ public class User extends AbstactPlayer{
         return combinationArrayList;
     }
     /**
-     * Retourne la combinaison secrète
-     * @return la combinaison secrète
+     * Retourne la combinaison secrete
+     * @return la combinaison secrete
      */
     @Override
     public ArrayList<Integer> getSecretCombination() {
@@ -53,7 +53,7 @@ public class User extends AbstactPlayer{
     }
 
     /**
-     * Demande à l'utilisateur à saisir la combinaison
+     * Demande a l utilisateur a saisir la combinaison
      * @return la combinaison saisi
      */
     private String askForCombination() {
@@ -85,10 +85,10 @@ public class User extends AbstactPlayer{
     }
 
     /**
-     * Demande à l'utilisateur comparer la proposition de l’ordinateur
-     * et la combinaison secrète
-     * @param compareAnswer paramètre pour comparer la réponse de l'utilisateur et la combinaison secrète
-     * @return reponse de l'utilisateur
+     * Demande a l utilisateur comparer la proposition de l ordinateur
+     * et la combinaison secrete
+     * @param compareAnswer parametre pour comparer la reponse de l utilisateur et la combinaison secrete
+     * @return reponse de l utilisateur
      */
     @Override
     public String askToCompare(String compareAnswer)  {

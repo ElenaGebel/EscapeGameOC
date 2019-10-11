@@ -43,3 +43,29 @@
 09-10-2019 00:33:06.889 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 5678 -> answer: +-+-
 09-10-2019 00:33:12.900 [main] INFO  com.company.Utility.PrintOutUtility - Game Over. IA winned.
 09-10-2019 00:33:12.900 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
+10-10-2019 09:23:14.210 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+10-10-2019 09:23:14.224 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+10-10-2019 09:28:42.187 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+10-10-2019 09:28:42.195 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+10-10-2019 09:31:23.426 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+10-10-2019 09:31:23.426 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+10-10-2019 09:34:10.785 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+10-10-2019 09:34:10.785 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+10-10-2019 09:35:34.057 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+10-10-2019 09:35:34.063 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+10-10-2019 09:48:43.267 [main] INFO  com.company.Utility.PrintOutUtility - StrategyType choosed: Defenseur
+10-10-2019 09:48:43.267 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+10-10-2019 09:48:43.267 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Defenseur Activated
+10-10-2019 09:48:51.328 [main] INFO  com.company.Utility.PrintOutUtility - User entered a secret combination 1234
+10-10-2019 09:48:51.328 [main] INFO  com.company.Utility.PrintOutUtility - IA guessed a number 4444
+10-10-2019 09:49:24.231 [main] INFO  com.company.Utility.PrintOutUtility - IA suggestion: 4444 -> answer :---=
+10-10-2019 09:49:24.231 [main] INFO  com.company.Utility.PrintOutUtility - IA guessed a number 1114
+10-10-2019 09:52:32.539 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+10-10-2019 09:52:32.555 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+10-10-2019 10:58:36.052 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+10-10-2019 10:58:36.062 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+10-10-2019 10:58:45.962 [main] INFO  com.company.Utility.PrintOutUtility - StrategyType choosed: Defenseur
+10-10-2019 10:58:45.962 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+10-10-2019 10:58:45.965 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Defenseur Activated
+10-10-2019 10:58:52.070 [main] INFO  com.company.Utility.PrintOutUtility - User entered a secret combination 1234
+10-10-2019 10:58:52.072 [main] INFO  com.company.Utility.PrintOutUtility - IA guessed a number 4444
