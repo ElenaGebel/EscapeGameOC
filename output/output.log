@@ -69,3 +69,7 @@
 10-10-2019 10:58:45.965 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Defenseur Activated
 10-10-2019 10:58:52.070 [main] INFO  com.company.Utility.PrintOutUtility - User entered a secret combination 1234
 10-10-2019 10:58:52.072 [main] INFO  com.company.Utility.PrintOutUtility - IA guessed a number 4444
+11-10-2019 15:02:18.405 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+11-10-2019 15:02:18.421 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+11-10-2019 15:05:51.141 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+11-10-2019 15:05:51.141 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
