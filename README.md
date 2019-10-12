@@ -27,11 +27,11 @@ https://github.com/ElenaGebel/EscapeGameOC.git
 
 ## Fichier de configuration
 EscapeGameOC/src/main/resources/config.properties
-1)combinationNum nombre de chiffres dans la combinaison
-2)tryNum nombre d’essais
-3)algorithmType  algorithme pour générer la proposition de l'intelligence artificielle 
+* combinationNum nombre de chiffres dans la combinaison
+* tryNum nombre d’essais
+* algorithmType  algorithme pour générer la proposition de l'intelligence artificielle 
   1 pour algorithme binaire et 2 pour algorithme random
-4)modeDeveloper mode "développeur" activé ou non
+* modeDeveloper mode "développeur" activé ou non
 
 ## Journalisation
 EscapeGameOC/output/output.log
