@@ -65,7 +65,7 @@ public class User extends AbstactPlayer{
         do {
             scanner = new Scanner(System.in);
 
-            if (scanner.hasNextInt()) {
+            if (scanner.hasNextLine()) {
                 result = scanner.nextLine();
 
                 if(result.length() != GameModel.getCombinationNum() || !checkNumberString(result)){
@@ -75,6 +75,7 @@ public class User extends AbstactPlayer{
                 }
 
             } else {
+
                 PrintOutUtility.printOutMessageAndLog("Veillez saisir " + GameModel.getCombinationNum()
                         + message +" entre 0 et 9.", "Illegal answer when choose combination proposed", "info");
                 result = "";

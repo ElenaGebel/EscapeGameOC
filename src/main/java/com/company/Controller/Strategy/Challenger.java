@@ -24,7 +24,7 @@ public class Challenger implements IStrategy{
 
         player2.getSecretCombination();
 
-        String message = "L’intelligence artificielle a choisi sa combinaison secrète";
+        String message = "L'intelligence artificielle a choisi sa combinaison secrète";
         if(GameModel.isModeDeveloper())
             message +=  ": " + player2.getSecretCombinationToString() + " (affiché en mode developpeur).";
         else
@@ -55,7 +55,7 @@ public class Challenger implements IStrategy{
             }
         }
         if(result.equals(""))
-            PrintOutUtility.printOutMessageAndLog("Game over. L’intelligence artificielle a gagné. " +
+            PrintOutUtility.printOutMessageAndLog("Game over. L'intelligence artificielle a gagné. " +
                     "Combinaison secrète: " + player2.getSecretCombinationToString(), "Game Over. IA winned.", "info");
 
 

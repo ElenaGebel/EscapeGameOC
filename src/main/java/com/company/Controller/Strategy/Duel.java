@@ -40,7 +40,7 @@ public class Duel implements IStrategy {
 
         player2.getSecretCombination();
 
-        String message = "L’intelligence artificielle a choisi sa combinaison secrète";
+        String message = "L'intelligence artificielle a choisi sa combinaison secrète";
         if(GameModel.isModeDeveloper())
             message +=  ": " + player2.getSecretCombinationToString() + " (affiché en mode développeur)";
 
@@ -71,7 +71,7 @@ public class Duel implements IStrategy {
             }else{
                 if (i <  GameModel.getTryNum() - 1)
                     PrintOutUtility.printOutMessageAndLog("Votre proposition: "
-                                    + player1.getCombinationToString() + " -> Réponse: " + resultPlayer1,
+                                    + player1.getCombinationToString() + " -> réponse: " + resultPlayer1,
                             "User suggestion: "+ player1.getCombinationToString() + " -> answer: " + resultPlayer1,
                             "info");
                 resultPlayer1 = "";
@@ -79,7 +79,7 @@ public class Duel implements IStrategy {
 
             if(!resultPlayer2.equals("") && resultPlayer2.length() > 0 && resultPlayer2.indexOf('+') == -1 &&
                     resultPlayer2.indexOf('-') == -1){
-                PrintOutUtility.printOutMessageAndLog("L’intelligence artificielle a gagné. Votre combinaison secrète: " +
+                PrintOutUtility.printOutMessageAndLog("L'intelligence artificielle a gagné. Votre combinaison secrète: " +
                         player1.getSecretCombinationToString(), "IA winned " +
                         player2.getCombinationToString(), "info");
                 break;
