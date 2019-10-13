@@ -38,3 +38,9 @@ EscapeGameOC/output/output.log
 
 ## JavaDoc
 https://elenagebel.github.io/EscapeGameOC/JavaDoc/
+
+## Lancer de l'application sur Windows (en mode de developpeur)
+ProjetEscapeGameOC/executable/startForWindows.bat
+
+## Executable jar file
+ProjetEscapeGameOC/executable/EscapeGameOC.jar
