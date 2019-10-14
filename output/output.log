@@ -265,3 +265,54 @@
 12-10-2019 15:21:01.024 [main] INFO  com.company.Utility.PrintOutUtility - Game over
 12-10-2019 15:21:01.024 [main] INFO  com.company.Utility.PrintOutUtility - User has not found the secret combination: 4395
 12-10-2019 15:21:01.024 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
+13-10-2019 10:57:21.126 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+13-10-2019 10:57:21.126 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+13-10-2019 11:04:23.708 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+13-10-2019 11:04:23.718 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+13-10-2019 11:04:30.502 [main] INFO  com.company.Utility.PrintOutUtility - StrategyType choosed: Challenger
+13-10-2019 11:04:30.503 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+13-10-2019 11:04:30.506 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Challenger Activated
+13-10-2019 11:04:30.507 [main] INFO  com.company.Utility.PrintOutUtility - IA generated a number 5301
+13-10-2019 11:04:50.867 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 3456 -> answer: +---
+13-10-2019 11:05:05.024 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 5678 -> answer: =---
+13-10-2019 11:05:11.482 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 5678 -> answer: =---
+13-10-2019 11:05:17.892 [main] INFO  com.company.Utility.PrintOutUtility - User winned. User guessed a number 5301
+13-10-2019 11:05:17.892 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
+13-10-2019 11:05:34.278 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+13-10-2019 11:05:37.494 [main] INFO  com.company.Utility.PrintOutUtility - StrategyType choosed: Defenseur
+13-10-2019 11:05:37.494 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+13-10-2019 11:05:37.500 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Defenseur Activated
+13-10-2019 11:05:55.447 [main] INFO  com.company.Utility.PrintOutUtility - User entered a secret combination 4567
+13-10-2019 11:05:55.451 [main] INFO  com.company.Utility.PrintOutUtility - IA guessed a number 4444
+13-10-2019 11:06:20.197 [main] INFO  com.company.Utility.PrintOutUtility - IA suggestion: 4444 -> answer :=+++
+13-10-2019 11:06:20.198 [main] INFO  com.company.Utility.PrintOutUtility - IA guessed a number 4777
+13-10-2019 11:06:39.628 [main] INFO  com.company.Utility.PrintOutUtility - IA suggestion: 4777 -> answer :=--=
+13-10-2019 11:06:39.629 [main] INFO  com.company.Utility.PrintOutUtility - IA guessed a number 4557
+13-10-2019 11:07:00.064 [main] INFO  com.company.Utility.PrintOutUtility - IA suggestion: 4557 -> answer :==+=
+13-10-2019 11:07:00.065 [main] INFO  com.company.Utility.PrintOutUtility - IA guessed a number 4567
+13-10-2019 11:07:05.243 [main] INFO  com.company.Utility.PrintOutUtility - IA winned. User guessed a number 
+13-10-2019 11:07:05.244 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
+13-10-2019 11:07:21.405 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+13-10-2019 11:07:26.495 [main] INFO  com.company.Utility.PrintOutUtility - StrategyType choosed: Duel
+13-10-2019 11:07:26.495 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+13-10-2019 11:07:26.496 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Duel Activated
+13-10-2019 11:07:36.824 [main] INFO  com.company.Utility.PrintOutUtility - User choosed a secret combination 7654
+13-10-2019 11:07:36.825 [main] INFO  com.company.Utility.PrintOutUtility - IA generated a secret combination 3983
+13-10-2019 11:07:48.234 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 1234 -> answer: ---+
+13-10-2019 11:07:48.234 [main] INFO  com.company.Utility.PrintOutUtility - IA suggestion: 4444 -> answer :---=
+13-10-2019 11:08:01.569 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 5678 -> answer: +--+
+13-10-2019 11:08:01.569 [main] INFO  com.company.Utility.PrintOutUtility - IA suggestion: 7774 -> answer :=++=
+13-10-2019 11:08:04.735 [main] INFO  com.company.Utility.PrintOutUtility - User suggestion: 1234 -> answer: ---+
+13-10-2019 11:08:04.736 [main] INFO  com.company.Utility.PrintOutUtility - IA suggestion: 7554 -> answer :=-==
+13-10-2019 11:08:08.109 [main] INFO  com.company.Utility.PrintOutUtility - IA winned 7654
+13-10-2019 11:08:08.109 [main] INFO  com.company.Utility.PrintOutUtility - Game over
+13-10-2019 11:08:08.109 [main] INFO  com.company.Utility.PrintOutUtility - User has not found the secret combination: 3983
+13-10-2019 11:08:08.109 [main] INFO  com.company.Utility.PrintOutUtility - Play again proposed
+14-10-2019 10:04:09.826 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+14-10-2019 10:04:09.842 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+14-10-2019 10:08:29.839 [main] INFO  com.company.Utility.PrintOutUtility - Config loaded combinationNum=4 tryNum=4 algorithmType=1 modeDeveloper=true
+14-10-2019 10:08:29.846 [main] INFO  com.company.Utility.PrintOutUtility - Menu of the game proposed
+14-10-2019 10:08:34.389 [main] INFO  com.company.Utility.PrintOutUtility - StrategyType choosed: Challenger
+14-10-2019 10:08:34.389 [main] INFO  com.company.Utility.PrintOutUtility - InitGame
+14-10-2019 10:08:34.404 [main] INFO  com.company.Utility.PrintOutUtility - Strategy Challenger Activated
+14-10-2019 10:08:34.404 [main] INFO  com.company.Utility.PrintOutUtility - IA generated a number 5478

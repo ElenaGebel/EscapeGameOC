@@ -70,13 +70,13 @@ public class User extends AbstactPlayer{
 
                 if(result.length() != GameModel.getCombinationNum() || !checkNumberString(result)){
                     result = "";
-                    PrintOutUtility.printOutMessageAndLog("Veillez saisir " + GameModel.getCombinationNum()
+                    PrintOutUtility.printOutMessageAndLog("Veuillez saisir " + GameModel.getCombinationNum()
                             + message +" entre 0 et 9.", "Illegal answer when choose combination proposed", "info");
                 }
 
             } else {
 
-                PrintOutUtility.printOutMessageAndLog("Veillez saisir " + GameModel.getCombinationNum()
+                PrintOutUtility.printOutMessageAndLog("Veuillez saisir " + GameModel.getCombinationNum()
                         + message +" entre 0 et 9.", "Illegal answer when choose combination proposed", "info");
                 result = "";
             }
@@ -103,18 +103,18 @@ public class User extends AbstactPlayer{
 
                 if(!checkSymbolString(result)){
 
-                    PrintOutUtility.printOutMessageAndLog("Veillez donner la réponse en utilisant les caractères +-="
+                    PrintOutUtility.printOutMessageAndLog("Veuillez donner la réponse en utilisant les caractères +-="
                                     + System.lineSeparator() + "(+) plus grand, plus petit (-) ou si c’est le bon (=)",
                             "Illegal answer when asked to compare: " + result, "info");
                     result = "";
                 }
                 else if (!compareAnswer.equals(result)){
-                    PrintOutUtility.printOutMessageAndLog("La réponse n'est pas bonne. Veillez essayer encore.",
+                    PrintOutUtility.printOutMessageAndLog("La réponse n'est pas bonne. Veuillez essayer encore.",
                             "Illegal answer when asked to compare: " + result, "info");
                     result = "";
                 }
             } else {
-                PrintOutUtility.printOutMessageAndLog("Veillez donner la réponse en utilisant les caractères +-= "
+                PrintOutUtility.printOutMessageAndLog("Veuillez donner la réponse en utilisant les caractères +-= "
                         + System.lineSeparator() + "(+) plus grand, plus petit (-) ou si c’est le bon (=)",
                         "Illegal answer when asked to compare" + result, "info");
                 result = "";

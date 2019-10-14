@@ -17,19 +17,19 @@ public class Defenseur implements IStrategy {
     /**
      * Lance le jeu en mode Defenseur
      * @param player1 - intance of User
-     * @param player2 - intance of Itelligence Artificielle
+     * @param player2 - intance of Intelligence Artificielle
      */
 
     @Override
     public void play(AbstactPlayer player1, AbstactPlayer player2) {
         if(GameModel.isModeDeveloper() && GameModel.getAlgorithmType() == 1)
-            PrintOutUtility.printOutMessageAndLog("algorithme de recherche binaire (affiché en mode developpeur).",
+            PrintOutUtility.printOutMessageAndLog("algorithme de recherche binaire (affiché en mode développeur).",
                     "", "info");
         else if(GameModel.isModeDeveloper() && GameModel.getAlgorithmType() != 1)
-            PrintOutUtility.printOutMessageAndLog("algorithme de recherche random (affiché en mode developpeur).",
+            PrintOutUtility.printOutMessageAndLog("algorithme de recherche random (affiché en mode développeur).",
                     "", "info");
 
-        PrintOutUtility.printOutMessageAndLog("Veillez saisir votre combinaison secrète : ",
+        PrintOutUtility.printOutMessageAndLog("Veuillez saisir votre combinaison secrète : ",
                 "Strategy Defenseur Activated", "info");
 
         player1.getSecretCombination();
@@ -44,10 +44,10 @@ public class Defenseur implements IStrategy {
                     player1.compare(player1.getSecretCombination(), player2.getCombination(false, "")));
 
             PrintOutUtility.printOutMessageAndLog("Votre combinaison secrète: "
-                    +  player1.getSecretCombinationToString() + ". Proposition de l'itelligence artificielle: "
+                    +  player1.getSecretCombinationToString() + ". Proposition de l'intelligence artificielle: "
                     + player2.getCombinationToString(), "IA guessed a number "
                     + player2.getCombinationToString(), "info");
-            PrintOutUtility.printOutMessageAndLog("Veillez saisir la réponse en utilisant les caractères +-=, "
+            PrintOutUtility.printOutMessageAndLog("Veuillez saisir la réponse en utilisant les caractères +-=, "
                             + System.lineSeparator() + "(+) plus grand, plus petit (-) ou si c’est le bon (=)", "", "info");
 
             result = player1.compare(player1.getSecretCombination(), player2.getCombination(false, ""));

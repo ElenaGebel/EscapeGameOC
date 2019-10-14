@@ -16,7 +16,7 @@ public class Challenger implements IStrategy{
     /**
      * Lance le jeu en mode Challenger
      * @param player1 - intance of User
-     * @param player2 - intance of Itelligence Artificielle
+     * @param player2 - intance of Intelligence Artificielle
      */
     @Override
     public void play(AbstactPlayer player1, AbstactPlayer player2) {
@@ -26,11 +26,11 @@ public class Challenger implements IStrategy{
 
         String message = "L'intelligence artificielle a choisi sa combinaison secrète";
         if(GameModel.isModeDeveloper())
-            message +=  ": " + player2.getSecretCombinationToString() + " (affiché en mode developpeur).";
+            message +=  ": " + player2.getSecretCombinationToString() + " (affiché en mode développeur).";
         else
             message += ". ";
 
-        PrintOutUtility.printOutMessageAndLog(message + System.lineSeparator() + "Veillez saisir votre proposition.",
+        PrintOutUtility.printOutMessageAndLog(message + System.lineSeparator() + "Veuillez saisir votre proposition.",
                 "IA generated a number " + player2.getSecretCombinationToString(), "info");
 
       //  User user = (User) player1;

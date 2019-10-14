@@ -16,20 +16,20 @@ public class Duel implements IStrategy {
     /**
      * Lance le jeu en mode Duel
      * @param player1 - intance of User
-     * @param player2 - intance of Itelligence Artificielle
+     * @param player2 - intance of Intelligence Artificielle
      */
 
     @Override
     public void play(AbstactPlayer player1, AbstactPlayer player2) {
 
         if(GameModel.isModeDeveloper() && GameModel.getAlgorithmType() == 1)
-            PrintOutUtility.printOutMessageAndLog("algorithme de recherche binaire (affiché en mode developpeur).",
+            PrintOutUtility.printOutMessageAndLog("algorithme de recherche binaire (affiché en mode développeur).",
                     "", "info");
         else if(GameModel.isModeDeveloper() && GameModel.getAlgorithmType() != 1)
-            PrintOutUtility.printOutMessageAndLog("algorithme de recherche random (affiché en mode developpeur).",
+            PrintOutUtility.printOutMessageAndLog("algorithme de recherche random (affiché en mode développeur).",
                     "", "info");
 
-        PrintOutUtility.printOutMessageAndLog("Veillez saisir votre combinaison secrète : ",
+        PrintOutUtility.printOutMessageAndLog("Veuillez saisir votre combinaison secrète : ",
                 "Strategy Duel Activated", "info");
 
         player1.getSecretCombination();
@@ -52,7 +52,7 @@ public class Duel implements IStrategy {
         String resultPlayer2 = "";
 
         for(int i = 0; i <  GameModel.getTryNum(); i++){
-            PrintOutUtility.printOutMessageAndLog("Veillez saisir votre proposition", "", "info");
+            PrintOutUtility.printOutMessageAndLog("Veuillez saisir votre proposition", "", "info");
 
             player1.getCombination(true, "");
 

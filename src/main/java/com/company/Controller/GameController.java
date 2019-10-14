@@ -35,7 +35,7 @@ public class GameController {
         Scanner scanner;
         int choice;
         do {
-            PrintOutUtility.printOutMessageAndLog("Veillez choisir: 1 - rejouer au même mode, " +
+            PrintOutUtility.printOutMessageAndLog("Veuillez choisir: 1 - rejouer au même mode, " +
                             "2 - lancer un autre mode, 3 - quitter l'application",
                     "Play again proposed", "info");
             choice = 0;
@@ -124,7 +124,7 @@ public class GameController {
          restoreDefault();
          Scanner scanner;
          int strategyType = 0;
-         PrintOutUtility.printOutMessageAndLog("Pour commencer veillez choisir un mode de jeu:" +
+         PrintOutUtility.printOutMessageAndLog("Pour commencer veuillez choisir un mode de jeu:" +
                          System.lineSeparator() + "1 - Challenger, 2 - Defenseur, 3 - Duel",
                  "Menu of the game proposed", "info");
          do {
